@@ -1,0 +1,38 @@
+﻿using System.Windows;
+using FlashcardApp.Core.Services;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace FlashcardApp.WpfUI
+{
+    public partial class LoginWindow : Window
+    {
+        private readonly UserService _userService;
+        private readonly System.IServiceProvider _serviceProvider;
+
+        public LoginWindow(UserService userService, System.IServiceProvider serviceProvider)
+        {
+            InitializeComponent();
+            _userService = userService;
+            _serviceProvider = serviceProvider;
+        }
+
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameTextBox.Text.Trim();
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Please enter a username.");
+                return;
+            }
+
+            LoginButton.IsEnabled = false;
+            var user = await _userService.GetOrCreateUserAsync(username);
+
+            var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+            await mainWindow.InitializeWithUserAsync(user);
+            mainWindow.Show();
+
+            this.Close();
+        }
+    }
+}

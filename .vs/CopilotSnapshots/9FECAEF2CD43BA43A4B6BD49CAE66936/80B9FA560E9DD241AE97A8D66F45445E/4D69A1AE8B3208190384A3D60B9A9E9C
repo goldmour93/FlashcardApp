@@ -1,0 +1,54 @@
+﻿using System;
+using System.Threading.Tasks;
+using FlashcardApp.Core.Interfaces;
+using FlashcardApp.Core.Models;
+
+namespace FlashcardApp.Core.Services
+{
+    /// <summary>
+    /// Service responsible for managing user accounts and their data.
+    /// </summary>
+    public class UserService
+    {
+        private readonly IUserRepository _userRepository;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserService"/> class.
+        /// </summary>
+        public UserService(IUserRepository userRepository)
+        {
+            _userRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
+        }
+
+        /// <summary>
+        /// Creates a new user or retrieves an existing one by username.
+        /// </summary>
+        public async Task<User> GetOrCreateUserAsync(string username)
+        {
+            if (string.IsNullOrWhiteSpace(username))
+                throw new ArgumentException("Username cannot be empty.", nameof(username));
+
+            var existingUser = await _userRepository.GetUserByUsernameAsync(username);
+            if (existingUser != null)
+            {
+                return existingUser;
+            }
+
+            var newUser = new User { Username = username };
+            await _userRepository.SaveUserAsync(newUser);
+            return newUser;
+        }
+
+        /// <summary>
+        /// Adds XP to the user and saves the updated user state.
+        /// </summary>
+        public async Task AddXpToUserAsync(User user, int xpGained)
+        {
+            if (user == null) throw new ArgumentNullException(nameof(user));
+            if (xpGained < 0) throw new ArgumentOutOfRangeException(nameof(xpGained), "XP cannot be negative.");
+
+            user.TotalXp += xpGained;
+            await _userRepository.SaveUserAsync(user);
+        }
+    }
+}

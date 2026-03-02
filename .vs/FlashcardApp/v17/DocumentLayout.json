@@ -1,0 +1,393 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\flashcardapp.wpfui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\flashcardapp.wpfui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\services\\settingsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\services\\settingsvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\repositories\\postgresuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\repositories\\postgresuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\UserServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FlashcardApp.Tests\\UserServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\GamificationServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FlashcardApp.Tests\\GamificationServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\SettingsValidatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FlashcardApp.Tests\\SettingsValidatorTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\topicselectionwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\topicselectionwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\topicselectionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\topicselectionwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\models\\flashcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\models\\flashcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\loginwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\loginwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\repositories\\inmemoryuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\repositories\\inmemoryuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CE6A209-149B-427D-B9F1-0A76C36CA7AC}|FlashcardApp.ConsoleUI\\FlashcardApp.ConsoleUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CE6A209-149B-427D-B9F1-0A76C36CA7AC}|FlashcardApp.ConsoleUI\\FlashcardApp.ConsoleUI.csproj|solutionrelative:flashcardapp.consoleui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.core\\facades\\flashcardenginefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7195828A-FE86-4753-AEA0-D0C509FFC326}|FlashcardApp.Core\\FlashcardApp.Core.csproj|solutionrelative:flashcardapp.core\\facades\\flashcardenginefacade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|c:\\users\\st20313819\\onedrive - cardiff metropolitan university\\software testing\\pres1\\flashcardapp.wpfui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1ED8C21F-BD47-4CE4-9739-293361E5472D}|FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj|solutionrelative:flashcardapp.wpfui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SettingsValidator.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Services\\SettingsValidator.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Services\\SettingsValidator.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Services\\SettingsValidator.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Services\\SettingsValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T15:38:40.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-23T15:37:03.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GamificationServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\GamificationServiceTests.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Tests\\GamificationServiceTests.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\GamificationServiceTests.cs",
+              "RelativeToolTip": "FlashcardApp.Tests\\GamificationServiceTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T15:36:06.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\UserServiceTests.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Tests\\UserServiceTests.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\UserServiceTests.cs",
+              "RelativeToolTip": "FlashcardApp.Tests\\UserServiceTests.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T15:36:17.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SettingsValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\SettingsValidatorTests.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Tests\\SettingsValidatorTests.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Tests\\SettingsValidatorTests.cs",
+              "RelativeToolTip": "FlashcardApp.Tests\\SettingsValidatorTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T15:35:37.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FlashcardApp.WpfUI",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T14:43:22.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PostgresUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Repositories\\PostgresUserRepository.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Repositories\\PostgresUserRepository.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Repositories\\PostgresUserRepository.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Repositories\\PostgresUserRepository.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwOQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:36:34.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:48:47.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TopicSelectionWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\TopicSelectionWindow.xaml",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\TopicSelectionWindow.xaml",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\TopicSelectionWindow.xaml",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\TopicSelectionWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-23T15:00:26.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TopicSelectionWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\TopicSelectionWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\TopicSelectionWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\TopicSelectionWindow.xaml.cs",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\TopicSelectionWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T15:00:39.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Services\\UserService.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Services\\UserService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowBYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:36:44.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Flashcard.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Models\\Flashcard.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Models\\Flashcard.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Models\\Flashcard.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Models\\Flashcard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:54:37.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAmwH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:35:31.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Models\\User.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Models\\User.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:54:19.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\appsettings.json",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\appsettings.json",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T14:43:17.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\LoginWindow.xaml",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\LoginWindow.xaml",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\LoginWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-23T14:48:24.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:44:34.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InMemoryUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Repositories\\InMemoryUserRepository.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Repositories\\InMemoryUserRepository.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Repositories\\InMemoryUserRepository.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Repositories\\InMemoryUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:36:25.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\App.xaml.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\App.xaml.cs",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\App.xaml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:37:01.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.ConsoleUI\\Program.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.ConsoleUI\\Program.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.ConsoleUI\\Program.cs",
+              "RelativeToolTip": "FlashcardApp.ConsoleUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:38:33.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FlashcardEngineFacade.cs",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Facades\\FlashcardEngineFacade.cs",
+              "RelativeDocumentMoniker": "FlashcardApp.Core\\Facades\\FlashcardEngineFacade.cs",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.Core\\Facades\\FlashcardEngineFacade.cs",
+              "RelativeToolTip": "FlashcardApp.Core\\Facades\\FlashcardEngineFacade.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T14:36:51.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\App.xaml",
+              "RelativeDocumentMoniker": "FlashcardApp.WpfUI\\App.xaml",
+              "ToolTip": "C:\\Users\\ST20313819\\OneDrive - Cardiff Metropolitan University\\Software Testing\\Pres1\\FlashcardApp.WpfUI\\App.xaml",
+              "RelativeToolTip": "FlashcardApp.WpfUI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-23T14:37:11.666Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

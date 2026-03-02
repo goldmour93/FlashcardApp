@@ -1,0 +1,14 @@
+﻿using System;
+using FSRS.Core;
+
+namespace FlashcardApp.Core
+{
+    public class Dummy
+    {
+        public void Test()
+        {
+            var card = new Card();
+            var fsrs = new FSRS();
+        }
+    }
+}

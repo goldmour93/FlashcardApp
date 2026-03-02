@@ -1,0 +1,17 @@
+﻿// See https://aka.ms/new-console-template for more information
+using System;
+Console.WriteLine("Hello, World!");
+
+foreach (var type in typeof(FSRS.Core.Models.Card).Assembly.GetTypes())
+{
+    Console.WriteLine(type.FullName);
+}
+
+foreach (var method in typeof(FSRS.Core.Interfaces.IScheduler).GetMethods())
+{
+    Console.WriteLine(method.Name);
+    foreach (var p in method.GetParameters())
+    {
+        Console.WriteLine("  " + p.ParameterType.Name + " " + p.Name);
+    }
+}

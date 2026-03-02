@@ -1,0 +1,9 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\FlashcardApp.Core",
+    "\\FlashcardApp.Core\\Repositories"
+  ],
+  "SelectedNode": "\\FlashcardApp.Core\\Repositories\\PostgresUserRepository.cs",
+  "PreviewInSolutionExplorer": false
+}

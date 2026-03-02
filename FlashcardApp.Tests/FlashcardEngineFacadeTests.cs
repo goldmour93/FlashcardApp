@@ -1,0 +1,75 @@
+using FlashcardApp.Core.Facades;
+using FlashcardApp.Core.Models;
+using FSRS.Core.Enums;
+using FSRS.Core.Interfaces;
+using FSRS.Core.Models;
+using Moq;
+
+
+namespace FlashcardApp.Tests
+{
+    public class FlashcardEngineFacadeTests
+    {
+        private readonly Mock<IScheduler> _mockScheduler;
+        private readonly FlashcardEngineFacade _sut;
+
+        public FlashcardEngineFacadeTests()
+        {
+            _mockScheduler = new Mock<IScheduler>();
+
+            _sut = new FlashcardEngineFacade(
+                _mockScheduler.Object
+            );
+        }
+
+        [Fact]
+        public void Constructor_NullDependencies_ThrowsArgumentNullException()
+        {
+            Assert.Throws<ArgumentNullException>(() => new FlashcardEngineFacade(null!));
+        }
+
+        [Theory]
+        [InlineData(1, Rating.Again, 0)]
+        [InlineData(2, Rating.Hard, 5)]
+        [InlineData(3, Rating.Good, 10)]
+        [InlineData(4, Rating.Easy, 10)]
+        public void ReviewCard_ValidRating_UpdatesCardAndReturnsXp(int rating, Rating expectedFsrsRating, int expectedXp)
+        {
+            // Arrange
+            var card = new Flashcard { Id = Guid.NewGuid() };
+            var updatedFsrsCard = new Card { Due = DateTime.UtcNow.AddDays(1) };
+            var reviewLog = new ReviewLog(Guid.NewGuid(), expectedFsrsRating, DateTime.UtcNow, null);
+
+            _mockScheduler
+                .Setup(s => s.ReviewCard(It.IsAny<Card>(), expectedFsrsRating, null, null))
+                .Returns((updatedFsrsCard, reviewLog));
+
+            // Act
+            int actualXp = _sut.ReviewCard(card, rating);
+
+            // Assert
+            Assert.Equal(expectedXp, actualXp);
+            Assert.Equal(updatedFsrsCard, card.FsrsCard);
+            _mockScheduler.Verify(s => s.ReviewCard(It.IsAny<Card>(), expectedFsrsRating, null, null), Times.Once);
+        }
+
+        [Fact]
+        public void ReviewCard_NullCard_ThrowsArgumentNullException()
+        {
+            // Act & Assert
+            Assert.Throws<ArgumentNullException>(() => _sut.ReviewCard(null!, 3));
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(5)]
+        public void ReviewCard_InvalidRating_ThrowsArgumentOutOfRangeException(int rating)
+        {
+            // Arrange
+            var card = new Flashcard();
+
+            // Act & Assert
+            Assert.Throws<ArgumentOutOfRangeException>(() => _sut.ReviewCard(card, rating));
+        }
+    }
+}

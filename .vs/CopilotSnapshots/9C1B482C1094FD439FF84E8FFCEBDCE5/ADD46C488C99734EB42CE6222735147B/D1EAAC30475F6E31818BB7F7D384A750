@@ -1,0 +1,16 @@
+﻿using System;
+using FSRS.Core;
+
+namespace FlashcardApp.Core
+{
+    public class Dummy
+    {
+        public void Test()
+        {
+            foreach (var type in typeof(FSRS.Core.FSRSAlgorithm).Assembly.GetTypes())
+            {
+                Console.WriteLine(type.FullName);
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+using System.Windows;
+using FlashcardApp.Core.Models;
+using FlashcardApp.Core.Services;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace FlashcardApp.WpfUI
+{
+    public partial class LoginWindow : Window
+    {
+        private readonly UserService _userService;
+        private readonly System.IServiceProvider _serviceProvider;
+
+        public LoginWindow(UserService userService, System.IServiceProvider serviceProvider)
+        {
+            InitializeComponent();
+            _userService = userService;
+            _serviceProvider = serviceProvider;
+        }
+
+        private async void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            string username = UsernameTextBox.Text.Trim();
+            if (string.IsNullOrEmpty(username))
+            {
+                MessageBox.Show("Please enter a username.");
+                return;
+            }
+
+            if (!username.Equals("Callum", System.StringComparison.OrdinalIgnoreCase))
+            {
+                MessageBox.Show("Access Denied. Only Callum can log in.");
+                return;
+            }
+
+            LoginButton.IsEnabled = false;
+            var user = await _userService.GetOrCreateUserAsync(username);
+
+            // Create sample deck for the user if they don't have one
+            if (user.Deck == null || user.Deck.Count == 0)
+            {
+                user.Deck =
+                [
+                    new() { Id = System.Guid.NewGuid(), Front = "What is a Bounded Context?", Back = "A boundary within a domain where a particular domain model applies.", Topic = "Domain Driven Design" },
+                    new() { Id = System.Guid.NewGuid(), Front = "What is an Aggregate Root?", Back = "The primary entity that acts as a gateway to a cluster of associated entities.", Topic = "Domain Driven Design" },
+                    new() { Id = System.Guid.NewGuid(), Front = "What is the Dependency Rule in Clean Architecture?", Back = "Source code dependencies must point only inward, toward higher-level policies.", Topic = "Clean Architecture" },
+                    new() { Id = System.Guid.NewGuid(), Front = "What are the typical layers in Clean Architecture?", Back = "Entities, Use Cases, Interface Adapters, Frameworks & Drivers.", Topic = "Clean Architecture" },
+                    new() { Id = System.Guid.NewGuid(), Front = "What is the difference between IEnumerable and IQueryable?", Back = "IEnumerable executes queries in memory, IQueryable executes them on the database server.", Topic = "C# and .Net" },
+                    new() { Id = System.Guid.NewGuid(), Front = "What is a record in C#?", Back = "A reference type that provides built-in functionality for encapsulating data with value-based equality.", Topic = "C# and .Net" }
+                ];
+                await _userService.AddXpToUserAsync(user, string.Empty, 0); // Save the deck
+            }
+
+            var topicWindow = _serviceProvider.GetRequiredService<TopicSelectionWindow>();
+            topicWindow.InitializeWithUser(user);
+            topicWindow.Show();
+
+            this.Close();
+        }
+    }
+}

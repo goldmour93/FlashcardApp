@@ -1,0 +1,126 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Windows;
+using System.Windows.Controls;
+using System.Threading.Tasks;
+using FlashcardApp.Core.Facades;
+using FlashcardApp.Core.Interfaces;
+using FlashcardApp.Core.Models;
+using FlashcardApp.Core.Repositories;
+using FlashcardApp.Core.Services;
+using FSRS.Core.Services;
+
+namespace FlashcardApp.WpfUI
+{
+    public partial class MainWindow : Window
+    {
+        private readonly FlashcardEngineFacade _facade;
+        private readonly UserService _userService;
+        private readonly StudySessionService _studySessionService;
+        private User _currentUser;
+        private Queue<Flashcard> _sessionCards;
+        private Flashcard _currentCard;
+        private StudySessionResult _sessionResult;
+
+        public MainWindow(FlashcardEngineFacade facade, UserService userService, StudySessionService studySessionService)
+        {
+            InitializeComponent();
+            _facade = facade;
+            _userService = userService;
+            _studySessionService = studySessionService;
+            Loaded += MainWindow_Loaded;
+        }
+
+        private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            await InitializeAppAsync();
+        }
+
+        private async Task InitializeAppAsync()
+        {
+            // Simulate a user logging in
+            _currentUser = await _userService.GetOrCreateUserAsync("Student1");
+
+            // Create sample deck for the user if they don't have one
+            if (_currentUser.Deck == null || _currentUser.Deck.Count == 0)
+            {
+                _currentUser.Deck = new List<Flashcard>
+                {
+                    new Flashcard { Id = Guid.NewGuid(), Front = "What is the capital of France?", Back = "Paris" },
+                    new Flashcard { Id = Guid.NewGuid(), Front = "What does SOLID stand for?", Back = "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion" },
+                    new Flashcard { Id = Guid.NewGuid(), Front = "What is 2 + 2?", Back = "4" },
+                    new Flashcard { Id = Guid.NewGuid(), Front = "What is the largest planet in our solar system?", Back = "Jupiter" },
+                    new Flashcard { Id = Guid.NewGuid(), Front = "Who wrote '1984'?", Back = "George Orwell" }
+                };
+                await _userService.AddXpToUserAsync(_currentUser, 0); // Save the deck
+            }
+
+            // Start Session
+            int dailyLimit = _currentUser.DailyLimit;
+            var cardsForSession = _studySessionService.GetCardsForSession(_currentUser.Deck, dailyLimit);
+            _sessionCards = new Queue<Flashcard>(cardsForSession);
+            _sessionResult = new StudySessionResult();
+
+            UpdateStatsUI();
+            ShowNextCard();
+        }
+
+        private void ShowNextCard()
+        {
+            if (_sessionCards.Count > 0)
+            {
+                _currentCard = _sessionCards.Dequeue();
+                FrontText.Text = _currentCard.Front;
+                BackText.Text = _currentCard.Back;
+                
+                // Reset UI state
+                BackText.Visibility = Visibility.Hidden;
+                ShowAnswerButton.Visibility = Visibility.Visible;
+                RatingPanel.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                // Session Complete
+                FrontText.Text = "Session Complete!";
+                BackText.Text = $"You reviewed {_sessionResult.CardsReviewed} cards and gained {_sessionResult.XpGained} XP.";
+                BackText.Visibility = Visibility.Visible;
+                
+                ShowAnswerButton.Visibility = Visibility.Hidden;
+                RatingPanel.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void ShowAnswerButton_Click(object sender, RoutedEventArgs e)
+        {
+            BackText.Visibility = Visibility.Visible;
+            ShowAnswerButton.Visibility = Visibility.Hidden;
+            RatingPanel.Visibility = Visibility.Visible;
+        }
+
+        private async void RatingButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button && int.TryParse(button.Tag.ToString(), out int rating))
+            {
+                // Review the card
+                int xpGained = _facade.ReviewCard(_currentCard, rating);
+                
+                // Update user XP
+                await _userService.AddXpToUserAsync(_currentUser, xpGained);
+
+                // Update stats
+                _sessionResult.CardsReviewed++;
+                _sessionResult.XpGained += xpGained;
+                UpdateStatsUI();
+
+                // Move to next card
+                ShowNextCard();
+            }
+        }
+
+        private void UpdateStatsUI()
+        {
+            CardsReviewedText.Text = $"Cards Reviewed: {_sessionResult.CardsReviewed}";
+            XpGainedText.Text = $"Session XP: {_sessionResult.XpGained} | Total XP: {_currentUser.TotalXp}";
+        }
+    }
+}

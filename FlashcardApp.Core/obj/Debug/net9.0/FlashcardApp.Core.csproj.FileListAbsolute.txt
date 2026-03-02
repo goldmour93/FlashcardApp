@@ -1,0 +1,24 @@
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.csproj.AssemblyReference.cache
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.AssemblyInfoInputs.cache
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.AssemblyInfo.cs
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\bin\Debug\net9.0\FlashcardApp.Core.deps.json
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\bin\Debug\net9.0\FlashcardApp.Core.dll
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\bin\Debug\net9.0\FlashcardApp.Core.pdb
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.dll
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\refint\FlashcardApp.Core.dll
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.pdb
+C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\obj\Debug\net9.0\ref\FlashcardApp.Core.dll
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\bin\Debug\net9.0\FlashcardApp.Core.deps.json
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\bin\Debug\net9.0\FlashcardApp.Core.dll
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\bin\Debug\net9.0\FlashcardApp.Core.pdb
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.csproj.AssemblyReference.cache
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.AssemblyInfoInputs.cache
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.AssemblyInfo.cs
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.csproj.CoreCompileInputs.cache
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.dll
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\refint\FlashcardApp.Core.dll
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.pdb
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\ref\FlashcardApp.Core.dll

@@ -1,0 +1,10 @@
+﻿<Window x:Class="FlashcardApp.WpfUI.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="200" Width="300" WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20" VerticalAlignment="Center">
+        <TextBlock Text="Enter Username:" Margin="0,0,0,5" />
+        <TextBox x:Name="UsernameTextBox" Margin="0,0,0,15" />
+        <Button x:Name="LoginButton" Content="Login" Click="LoginButton_Click" Padding="5" />
+    </StackPanel>
+</Window>

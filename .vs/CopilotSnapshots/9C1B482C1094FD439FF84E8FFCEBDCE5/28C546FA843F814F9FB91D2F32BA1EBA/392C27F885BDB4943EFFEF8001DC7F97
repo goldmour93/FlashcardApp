@@ -1,0 +1,82 @@
+﻿// See https://aka.ms/new-console-template for more information
+using System;
+using System.Collections.Generic;
+using FlashcardApp.Core.Facades;
+using FlashcardApp.Core.Models;
+using FlashcardApp.Core.Services;
+using FSRS.Core.Services;
+
+Console.WriteLine("==================================================");
+Console.WriteLine("   Welcome to the Spaced Repetition Flashcard App!");
+Console.WriteLine("==================================================");
+
+// 1. Setup Dependencies
+var gamificationService = new GamificationService();
+var studySessionService = new StudySessionService();
+var settingsValidator = new SettingsValidator();
+var scheduler = new Scheduler(); // FSRS.Core Scheduler
+
+var facade = new FlashcardEngineFacade(
+    gamificationService,
+    studySessionService,
+    settingsValidator,
+    scheduler
+);
+
+// 2. Create some sample flashcards
+var deck = new List<Flashcard>
+{
+    new Flashcard { Id = Guid.NewGuid(), Front = "What is the capital of France?", Back = "Paris" },
+    new Flashcard { Id = Guid.NewGuid(), Front = "What does SOLID stand for?", Back = "Single Responsibility, Open-Closed, Liskov Substitution, Interface Segregation, Dependency Inversion" },
+    new Flashcard { Id = Guid.NewGuid(), Front = "What is 2 + 2?", Back = "4" }
+};
+
+// 3. Start a Study Session
+int dailyLimit = 5;
+var sessionCards = studySessionService.GetCardsForSession(deck, dailyLimit);
+
+var sessionResult = new StudySessionResult();
+
+foreach (var card in sessionCards)
+{
+    Console.WriteLine("\n--------------------------------------------------");
+    Console.WriteLine($"Q: {card.Front}");
+    Console.WriteLine("Press [Enter] to reveal the answer...");
+    Console.ReadLine();
+
+    Console.WriteLine($"A: {card.Back}");
+    Console.WriteLine("\nHow hard was this to remember?");
+    Console.WriteLine("1 = Again, 2 = Hard, 3 = Good, 4 = Easy");
+
+    int rating = 0;
+    while (rating < 1 || rating > 4)
+    {
+        Console.Write("Enter rating (1-4): ");
+        var input = Console.ReadLine();
+        if (int.TryParse(input, out int parsedRating) && parsedRating >= 1 && parsedRating <= 4)
+        {
+            rating = parsedRating;
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a number between 1 and 4.");
+        }
+    }
+
+    // 4. Review the card using the Facade
+    int xpGained = facade.ReviewCard(card, rating);
+    
+    sessionResult.CardsReviewed++;
+    sessionResult.XpGained += xpGained;
+
+    Console.WriteLine($"\nCard reviewed! You gained {xpGained} XP.");
+    Console.WriteLine($"Next review scheduled for: {card.FsrsCard.Due}");
+}
+
+// 5. Session Summary
+Console.WriteLine("\n==================================================");
+Console.WriteLine("                 Session Complete!                ");
+Console.WriteLine("==================================================");
+Console.WriteLine($"Cards Reviewed: {sessionResult.CardsReviewed}");
+Console.WriteLine($"Total XP Gained: {sessionResult.XpGained}");
+Console.WriteLine("==================================================");

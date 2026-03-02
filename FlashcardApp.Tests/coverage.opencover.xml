@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession>
+  <Summary numSequencePoints="109" visitedSequencePoints="106" numBranchPoints="42" visitedBranchPoints="39" sequenceCoverage="97.24" branchCoverage="92.85" maxCyclomaticComplexity="59" minCyclomaticComplexity="59" visitedClasses="10" numClasses="11" visitedMethods="24" numMethods="26" />
+  <Modules>
+    <Module hash="15FFFE86-148D-4E7C-AC5F-34CA44C218F9">
+      <ModulePath>FlashcardApp.Core.dll</ModulePath>
+      <ModuleTime>2026-02-23T03:51:30</ModuleTime>
+      <ModuleName>FlashcardApp.Core</ModuleName>
+      <Files>
+        <File uid="1" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Services\GamificationService.cs" />
+        <File uid="2" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Services\SettingsValidator.cs" />
+        <File uid="3" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Services\StudySessionService.cs" />
+        <File uid="4" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Services\UserService.cs" />
+        <File uid="5" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Repositories\InMemoryUserRepository.cs" />
+        <File uid="6" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Models\Flashcard.cs" />
+        <File uid="7" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Models\StudySessionResult.cs" />
+        <File uid="8" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Models\User.cs" />
+        <File uid="9" fullPath="C:\Users\ST20313819\OneDrive - Cardiff Metropolitan University\Software Testing\Pres1\FlashcardApp.Core\Facades\FlashcardEngineFacade.cs" />
+      </Files>
+      <Classes>
+        <Class>
+          <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlashcardApp.Core.Services.GamificationService</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="5" nPathComplexity="5" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="10" visitedSequencePoints="10" numBranchPoints="5" visitedBranchPoints="5" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 FlashcardApp.Core.Services.GamificationService::CalculateXp(System.Int32)</Name>
+              <FileRef uid="1" />
+              <SequencePoints>
+                <SequencePoint vc="14" uspid="17" ordinal="0" sl="17" sc="1" el="17" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="14" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="5" bev="5" fileid="1" />
+                <SequencePoint vc="14" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="21" ordinal="4" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="22" ordinal="5" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="2" uspid="23" ordinal="6" sl="23" sc="1" el="23" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="6" uspid="24" ordinal="7" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="14" uspid="25" ordinal="8" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="1" />
+                <SequencePoint vc="8" uspid="26" ordinal="9" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="1" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="18" ordinal="1" path="1" offset="8" offsetend="31" sl="18" fileid="1" />
+                <BranchPoint vc="2" uspid="18" ordinal="2" path="2" offset="8" offsetend="35" sl="18" fileid="1" />
+                <BranchPoint vc="2" uspid="18" ordinal="3" path="3" offset="8" offsetend="39" sl="18" fileid="1" />
+                <BranchPoint vc="2" uspid="18" ordinal="4" path="4" offset="8" offsetend="44" sl="18" fileid="1" />
+                <BranchPoint vc="6" uspid="18" ordinal="0" path="0" offset="8" offsetend="49" sl="18" fileid="1" />
+              </BranchPoints>
+              <MethodPoint vc="10" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="17" ec="1" el="26" bec="0" bev="0" fileid="1" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlashcardApp.Core.Services.SettingsValidator</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void FlashcardApp.Core.Services.SettingsValidator::ValidateDesiredRetention(System.Double)</Name>
+              <FileRef uid="2" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="6" uspid="18" ordinal="1" sl="18" sc="1" el="18" ec="2" bec="4" bev="4" fileid="2" />
+                <SequencePoint vc="3" uspid="19" ordinal="2" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="20" ordinal="3" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="21" ordinal="4" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="22" ordinal="5" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="2" />
+                <SequencePoint vc="3" uspid="24" ordinal="6" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="2" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="4" uspid="18" ordinal="0" path="0" offset="11" offsetend="13" sl="18" fileid="2" />
+                <BranchPoint vc="2" uspid="18" ordinal="1" path="1" offset="11" offsetend="27" sl="18" fileid="2" />
+                <BranchPoint vc="3" uspid="18" ordinal="2" path="0" offset="30" offsetend="32" sl="18" fileid="2" />
+                <BranchPoint vc="3" uspid="18" ordinal="3" path="1" offset="30" offsetend="49" sl="18" fileid="2" />
+              </BranchPoints>
+              <MethodPoint vc="7" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="16" ec="1" el="24" bec="0" bev="0" fileid="2" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlashcardApp.Core.Services.StudySessionService</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.IEnumerable`1&lt;FlashcardApp.Core.Models.Flashcard&gt; FlashcardApp.Core.Services.StudySessionService::GetCardsForSession(System.Collections.Generic.IEnumerable`1&lt;FlashcardApp.Core.Models.Flashcard&gt;,System.Int32)</Name>
+              <FileRef uid="3" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="22" ordinal="0" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="4" uspid="23" ordinal="1" sl="23" sc="1" el="23" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="1" uspid="24" ordinal="2" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="25" ordinal="3" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="3" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="2" bev="2" fileid="3" />
+                <SequencePoint vc="1" uspid="29" ordinal="5" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="1" uspid="30" ordinal="6" sl="30" sc="1" el="30" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="34" ordinal="7" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="3" />
+                <SequencePoint vc="2" uspid="35" ordinal="8" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="3" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="23" ordinal="0" path="0" offset="7" offsetend="9" sl="23" fileid="3" />
+                <BranchPoint vc="3" uspid="23" ordinal="1" path="1" offset="7" offsetend="21" sl="23" fileid="3" />
+                <BranchPoint vc="1" uspid="28" ordinal="2" path="0" offset="27" offsetend="29" sl="28" fileid="3" />
+                <BranchPoint vc="2" uspid="28" ordinal="3" path="1" offset="27" offsetend="46" sl="28" fileid="3" />
+              </BranchPoints>
+              <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="22" ec="1" el="35" bec="0" bev="0" fileid="3" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="50" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlashcardApp.Core.Services.UserService</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="50" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="2" visitedBranchPoints="1" sequenceCoverage="100" branchCoverage="50" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void FlashcardApp.Core.Services.UserService::.ctor(FlashcardApp.Core.Interfaces.IUserRepository)</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="18" ordinal="0" sl="18" sc="1" el="18" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="5" uspid="19" ordinal="1" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="5" uspid="20" ordinal="2" sl="20" sc="1" el="20" ec="2" bec="2" bev="1" fileid="4" />
+                <SequencePoint vc="5" uspid="21" ordinal="3" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="20" ordinal="0" path="0" offset="11" offsetend="13" sl="20" fileid="4" />
+                <BranchPoint vc="5" uspid="20" ordinal="1" path="1" offset="11" offsetend="25" sl="20" fileid="4" />
+              </BranchPoints>
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="18" ec="1" el="21" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="8" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="87.5" maxCyclomaticComplexity="8" minCyclomaticComplexity="8" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlashcardApp.Core.Services.UserService/&lt;AddXpToUserAsync&gt;d__3</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="8" nPathComplexity="8" sequenceCoverage="100" branchCoverage="87.5" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="8" visitedBranchPoints="7" sequenceCoverage="100" branchCoverage="87.5" maxCyclomaticComplexity="8" minCyclomaticComplexity="8" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void FlashcardApp.Core.Services.UserService/&lt;AddXpToUserAsync&gt;d__3::MoveNext()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="46" ordinal="0" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="47" ordinal="1" sl="47" sc="1" el="47" ec="2" bec="2" bev="1" fileid="4" />
+                <SequencePoint vc="3" uspid="48" ordinal="2" sl="48" sc="1" el="48" ec="2" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="50" ordinal="3" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="52" ordinal="4" sl="52" sc="1" el="52" ec="2" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="53" ordinal="5" sl="53" sc="1" el="53" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="54" ordinal="6" sl="54" sc="1" el="54" ec="2" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="55" ordinal="7" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="56" ordinal="8" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="57" ordinal="9" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="58" ordinal="10" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="59" ordinal="11" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="61" ordinal="12" sl="61" sc="1" el="61" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="62" ordinal="13" sl="62" sc="1" el="62" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="0" uspid="47" ordinal="0" path="0" offset="29" offsetend="31" sl="47" fileid="4" />
+                <BranchPoint vc="2" uspid="47" ordinal="1" path="1" offset="29" offsetend="42" sl="47" fileid="4" />
+                <BranchPoint vc="1" uspid="48" ordinal="2" path="0" offset="53" offsetend="55" sl="48" fileid="4" />
+                <BranchPoint vc="1" uspid="48" ordinal="3" path="1" offset="53" offsetend="71" sl="48" fileid="4" />
+                <BranchPoint vc="1" uspid="52" ordinal="4" path="0" offset="112" offsetend="114" sl="52" fileid="4" />
+                <BranchPoint vc="1" uspid="54" ordinal="6" path="0" offset="144" offsetend="146" sl="54" fileid="4" />
+                <BranchPoint vc="1" uspid="54" ordinal="7" path="1" offset="144" offsetend="172" sl="54" fileid="4" />
+                <BranchPoint vc="1" uspid="52" ordinal="5" path="1" offset="112" offsetend="220" sl="52" fileid="4" />
+              </BranchPoints>
+              <MethodPoint vc="14" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="46" ec="1" el="62" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="1" numClasses="1" visitedMethods="1" numMethods="1" />
+          <FullName>FlashcardApp.Core.Services.UserService/&lt;GetOrCreateUserAsync&gt;d__2</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="4" nPathComplexity="4" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="11" visitedSequencePoints="11" numBranchPoints="4" visitedBranchPoints="4" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void FlashcardApp.Core.Services.UserService/&lt;GetOrCreateUserAsync&gt;d__2::MoveNext()</Name>
+              <FileRef uid="4" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="27" ordinal="0" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="4" uspid="28" ordinal="1" sl="28" sc="1" el="28" ec="2" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="2" uspid="29" ordinal="2" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="31" ordinal="3" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="32" ordinal="4" sl="32" sc="1" el="32" ec="2" bec="2" bev="2" fileid="4" />
+                <SequencePoint vc="1" uspid="33" ordinal="5" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="34" ordinal="6" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="37" ordinal="7" sl="37" sc="1" el="37" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="38" ordinal="8" sl="38" sc="1" el="38" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="1" uspid="39" ordinal="9" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="4" />
+                <SequencePoint vc="2" uspid="40" ordinal="10" sl="40" sc="1" el="40" ec="2" bec="0" bev="0" fileid="4" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="2" uspid="28" ordinal="0" path="0" offset="39" offsetend="41" sl="28" fileid="4" />
+                <BranchPoint vc="2" uspid="28" ordinal="1" path="1" offset="39" offsetend="57" sl="28" fileid="4" />
+                <BranchPoint vc="1" uspid="32" ordinal="2" path="0" offset="207" offsetend="209" sl="32" fileid="4" />
+                <BranchPoint vc="1" uspid="32" ordinal="3" path="1" offset="207" offsetend="222" sl="32" fileid="4" />
+              </BranchPoints>
+              <MethodPoint vc="11" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="27" ec="1" el="40" bec="0" bev="0" fileid="4" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="14" visitedSequencePoints="14" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="4" numMethods="4" />
+          <FullName>FlashcardApp.Core.Repositories.InMemoryUserRepository</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Tasks.Task`1&lt;FlashcardApp.Core.Models.User&gt; FlashcardApp.Core.Repositories.InMemoryUserRepository::GetUserByIdAsync(System.Guid)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="20" ordinal="1" sl="20" sc="1" el="20" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="21" ordinal="2" sl="21" sc="1" el="21" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="22" ordinal="3" sl="22" sc="1" el="22" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="19" ec="1" el="22" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="4" visitedSequencePoints="4" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Tasks.Task`1&lt;FlashcardApp.Core.Models.User&gt; FlashcardApp.Core.Repositories.InMemoryUserRepository::GetUserByUsernameAsync(System.String)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="2" uspid="25" ordinal="0" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="3" uspid="26" ordinal="1" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="27" ordinal="2" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="28" ordinal="3" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="4" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="25" ec="1" el="28" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="2" nPathComplexity="2" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="2" visitedBranchPoints="2" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="2" minCyclomaticComplexity="2" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Threading.Tasks.Task FlashcardApp.Core.Repositories.InMemoryUserRepository::SaveUserAsync(FlashcardApp.Core.Models.User)</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="3" uspid="31" ordinal="0" sl="31" sc="1" el="31" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="4" uspid="32" ordinal="1" sl="32" sc="1" el="32" ec="2" bec="2" bev="2" fileid="5" />
+                <SequencePoint vc="2" uspid="33" ordinal="2" sl="33" sc="1" el="33" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="34" ordinal="3" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="5" />
+                <SequencePoint vc="2" uspid="35" ordinal="4" sl="35" sc="1" el="35" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="32" ordinal="0" path="0" offset="7" offsetend="9" sl="32" fileid="5" />
+                <BranchPoint vc="2" uspid="32" ordinal="1" path="1" offset="7" offsetend="20" sl="32" fileid="5" />
+              </BranchPoints>
+              <MethodPoint vc="5" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="31" ec="1" el="35" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void FlashcardApp.Core.Repositories.InMemoryUserRepository::.ctor()</Name>
+              <FileRef uid="5" />
+              <SequencePoints>
+                <SequencePoint vc="5" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="5" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="16" ec="1" el="16" bec="0" bev="0" fileid="5" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="5" visitedSequencePoints="5" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="5" numMethods="5" />
+          <FullName>FlashcardApp.Core.Models.Flashcard</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Guid FlashcardApp.Core.Models.Flashcard::get_Id()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="4" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String FlashcardApp.Core.Models.Flashcard::get_Front()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="13" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String FlashcardApp.Core.Models.Flashcard::get_Back()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="13" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="24" ec="1" el="24" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String FlashcardApp.Core.Models.Flashcard::get_Topic()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="13" uspid="29" ordinal="0" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="29" ec="1" el="29" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>FSRS.Core.Models.Card FlashcardApp.Core.Models.Flashcard::get_FsrsCard()</Name>
+              <FileRef uid="6" />
+              <SequencePoints>
+                <SequencePoint vc="25" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="6" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="34" ec="1" el="34" bec="0" bev="0" fileid="6" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="2" />
+          <FullName>FlashcardApp.Core.Models.StudySessionResult</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 FlashcardApp.Core.Models.StudySessionResult::get_CardsReviewed()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="11" ordinal="0" sl="11" sc="1" el="11" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="11" ec="1" el="11" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="0" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 FlashcardApp.Core.Models.StudySessionResult::get_XpGained()</Name>
+              <FileRef uid="7" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="16" ordinal="0" sl="16" sc="1" el="16" ec="2" bec="0" bev="0" fileid="7" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="0" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="16" ec="1" el="16" bec="0" bev="0" fileid="7" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="7" visitedSequencePoints="7" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="1" numClasses="1" visitedMethods="7" numMethods="7" />
+          <FullName>FlashcardApp.Core.Models.User</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Guid FlashcardApp.Core.Models.User::get_Id()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="15" uspid="14" ordinal="0" sl="14" sc="1" el="14" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="14" ec="1" el="14" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.String FlashcardApp.Core.Models.User::get_Username()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="16" uspid="19" ordinal="0" sl="19" sc="1" el="19" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="19" ec="1" el="19" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 FlashcardApp.Core.Models.User::get_TotalXp()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="11" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="2" offset="2" sc="0" sl="24" ec="1" el="24" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 FlashcardApp.Core.Models.User::get_DailyLimit()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="29" ordinal="0" sl="29" sc="1" el="29" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="3" offset="3" sc="0" sl="29" ec="1" el="29" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Double FlashcardApp.Core.Models.User::get_DesiredRetention()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="34" ordinal="0" sl="34" sc="1" el="34" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="4" offset="4" sc="0" sl="34" ec="1" el="34" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.Dictionary`2&lt;System.String,System.Int32&gt; FlashcardApp.Core.Models.User::get_TopicXp()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="11" uspid="39" ordinal="0" sl="39" sc="1" el="39" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="5" offset="5" sc="0" sl="39" ec="1" el="39" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="1" nPathComplexity="1" sequenceCoverage="100" branchCoverage="100" isConstructor="False" isGetter="True" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="1" visitedSequencePoints="1" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Collections.Generic.List`1&lt;FlashcardApp.Core.Models.Flashcard&gt; FlashcardApp.Core.Models.User::get_Deck()</Name>
+              <FileRef uid="8" />
+              <SequencePoints>
+                <SequencePoint vc="6" uspid="44" ordinal="0" sl="44" sc="1" el="44" ec="2" bec="0" bev="0" fileid="8" />
+              </SequencePoints>
+              <BranchPoints />
+              <MethodPoint vc="1" uspid="0" p8:type="SequencePoint" ordinal="6" offset="6" sc="0" sl="44" ec="1" el="44" bec="0" bev="0" fileid="8" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="26" visitedSequencePoints="25" numBranchPoints="13" visitedBranchPoints="12" sequenceCoverage="96.15" branchCoverage="92.3" maxCyclomaticComplexity="7" minCyclomaticComplexity="6" visitedClasses="1" numClasses="1" visitedMethods="2" numMethods="2" />
+          <FullName>FlashcardApp.Core.Facades.FlashcardEngineFacade</FullName>
+          <Methods>
+            <Method cyclomaticComplexity="7" nPathComplexity="7" sequenceCoverage="94.11" branchCoverage="85.71" isConstructor="False" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="17" visitedSequencePoints="16" numBranchPoints="7" visitedBranchPoints="6" sequenceCoverage="94.11" branchCoverage="85.71" maxCyclomaticComplexity="7" minCyclomaticComplexity="7" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Int32 FlashcardApp.Core.Facades.FlashcardEngineFacade::ReviewCard(FlashcardApp.Core.Models.Flashcard,System.Int32)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="7" uspid="43" ordinal="0" sl="43" sc="1" el="43" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="7" uspid="44" ordinal="1" sl="44" sc="1" el="44" ec="2" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="1" uspid="45" ordinal="2" sl="45" sc="1" el="45" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="46" ordinal="3" sl="46" sc="1" el="46" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="6" uspid="50" ordinal="4" sl="50" sc="1" el="50" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="53" ordinal="5" sl="53" sc="1" el="53" ec="2" bec="5" bev="4" fileid="9" />
+                <SequencePoint vc="4" uspid="54" ordinal="6" sl="54" sc="1" el="54" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="55" ordinal="7" sl="55" sc="1" el="55" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="56" ordinal="8" sl="56" sc="1" el="56" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="57" ordinal="9" sl="57" sc="1" el="57" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="1" uspid="58" ordinal="10" sl="58" sc="1" el="58" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="0" uspid="59" ordinal="11" sl="59" sc="1" el="59" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="60" ordinal="12" sl="60" sc="1" el="60" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="63" ordinal="13" sl="63" sc="1" el="63" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="66" ordinal="14" sl="66" sc="1" el="66" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="68" ordinal="15" sl="68" sc="1" el="68" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="4" uspid="69" ordinal="16" sl="69" sc="1" el="69" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="44" ordinal="0" path="0" offset="9" offsetend="11" sl="44" fileid="9" />
+                <BranchPoint vc="6" uspid="44" ordinal="1" path="1" offset="9" offsetend="23" sl="44" fileid="9" />
+                <BranchPoint vc="1" uspid="53" ordinal="3" path="1" offset="43" offsetend="66" sl="53" fileid="9" />
+                <BranchPoint vc="1" uspid="53" ordinal="4" path="2" offset="43" offsetend="71" sl="53" fileid="9" />
+                <BranchPoint vc="1" uspid="53" ordinal="5" path="3" offset="43" offsetend="76" sl="53" fileid="9" />
+                <BranchPoint vc="1" uspid="53" ordinal="6" path="4" offset="43" offsetend="81" sl="53" fileid="9" />
+                <BranchPoint vc="0" uspid="53" ordinal="2" path="0" offset="43" offsetend="86" sl="53" fileid="9" />
+              </BranchPoints>
+              <MethodPoint vc="16" uspid="0" p8:type="SequencePoint" ordinal="0" offset="0" sc="0" sl="43" ec="1" el="69" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+            <Method cyclomaticComplexity="6" nPathComplexity="6" sequenceCoverage="100" branchCoverage="100" isConstructor="True" isGetter="False" isSetter="False" isStatic="True">
+              <Summary numSequencePoints="9" visitedSequencePoints="9" numBranchPoints="6" visitedBranchPoints="6" sequenceCoverage="100" branchCoverage="100" maxCyclomaticComplexity="6" minCyclomaticComplexity="6" visitedClasses="0" numClasses="0" visitedMethods="1" numMethods="1" />
+              <MetadataToken />
+              <Name>System.Void FlashcardApp.Core.Facades.FlashcardEngineFacade::.ctor(FlashcardApp.Core.Services.GamificationService,FlashcardApp.Core.Services.StudySessionService,FSRS.Core.Interfaces.IScheduler)</Name>
+              <FileRef uid="9" />
+              <SequencePoints>
+                <SequencePoint vc="11" uspid="24" ordinal="0" sl="24" sc="1" el="24" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="11" uspid="25" ordinal="1" sl="25" sc="1" el="25" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="11" uspid="26" ordinal="2" sl="26" sc="1" el="26" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="11" uspid="27" ordinal="3" sl="27" sc="1" el="27" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="11" uspid="28" ordinal="4" sl="28" sc="1" el="28" ec="2" bec="0" bev="0" fileid="9" />
+                <SequencePoint vc="11" uspid="29" ordinal="5" sl="29" sc="1" el="29" ec="2" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="10" uspid="30" ordinal="6" sl="30" sc="1" el="30" ec="2" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="9" uspid="31" ordinal="7" sl="31" sc="1" el="31" ec="2" bec="2" bev="2" fileid="9" />
+                <SequencePoint vc="8" uspid="32" ordinal="8" sl="32" sc="1" el="32" ec="2" bec="0" bev="0" fileid="9" />
+              </SequencePoints>
+              <BranchPoints>
+                <BranchPoint vc="1" uspid="29" ordinal="0" path="0" offset="11" offsetend="13" sl="29" fileid="9" />
+                <BranchPoint vc="10" uspid="29" ordinal="1" path="1" offset="11" offsetend="25" sl="29" fileid="9" />
+                <BranchPoint vc="1" uspid="30" ordinal="2" path="0" offset="33" offsetend="35" sl="30" fileid="9" />
+                <BranchPoint vc="9" uspid="30" ordinal="3" path="1" offset="33" offsetend="47" sl="30" fileid="9" />
+                <BranchPoint vc="1" uspid="31" ordinal="4" path="0" offset="55" offsetend="57" sl="31" fileid="9" />
+                <BranchPoint vc="8" uspid="31" ordinal="5" path="1" offset="55" offsetend="69" sl="31" fileid="9" />
+              </BranchPoints>
+              <MethodPoint vc="9" uspid="0" p8:type="SequencePoint" ordinal="1" offset="1" sc="0" sl="24" ec="1" el="32" bec="0" bev="0" fileid="9" xmlns:p8="xsi" />
+            </Method>
+          </Methods>
+        </Class>
+      </Classes>
+    </Module>
+  </Modules>
+</CoverageSession>

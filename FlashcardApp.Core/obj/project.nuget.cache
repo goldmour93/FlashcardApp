@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "7PG91h18Dss=",
+  "success": true,
+  "projectFilePath": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.Core\\FlashcardApp.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Callum\\.nuget\\packages\\fsrs.core\\1.0.7\\fsrs.core.1.0.7.nupkg.sha512",
+    "C:\\Users\\Callum\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.5\\microsoft.extensions.dependencyinjection.abstractions.9.0.5.nupkg.sha512",
+    "C:\\Users\\Callum\\.nuget\\packages\\sonaranalyzer.csharp\\10.19.0.132793\\sonaranalyzer.csharp.10.19.0.132793.nupkg.sha512"
+  ],
+  "logs": []
+}

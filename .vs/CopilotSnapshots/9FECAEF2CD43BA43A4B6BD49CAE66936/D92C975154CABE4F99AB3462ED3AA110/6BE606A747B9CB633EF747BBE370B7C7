@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using FlashcardApp.Core.Interfaces;
+using FlashcardApp.Core.Models;
+
+namespace FlashcardApp.Core.Repositories
+{
+    /// <summary>
+    /// A simple in-memory repository for storing users during runtime.
+    /// This can be replaced with a database repository (e.g., Entity Framework) later.
+    /// </summary>
+    public class InMemoryUserRepository : IUserRepository
+    {
+        private readonly Dictionary<Guid, User> _users = new Dictionary<Guid, User>();
+
+        public User? GetUserById(Guid id)
+        {
+            _users.TryGetValue(id, out var user);
+            return user;
+        }
+
+        public User? GetUserByUsername(string username)
+        {
+            return _users.Values.FirstOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public void SaveUser(User user)
+        {
+            if (user == null) throw new ArgumentNullException(nameof(user));
+            _users[user.Id] = user;
+        }
+    }
+}

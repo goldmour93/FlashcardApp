@@ -1,0 +1,57 @@
+﻿using System;
+using System.Threading.Tasks;
+using FlashcardApp.Core.Interfaces;
+using FlashcardApp.Core.Models;
+using FlashcardApp.Core.Services;
+using Moq;
+using Xunit;
+
+namespace FlashcardApp.Tests
+{
+    public class UserServiceTests
+    {
+        private readonly Mock<IUserRepository> _mockRepo;
+        private readonly UserService _userService;
+
+        public UserServiceTests()
+        {
+            _mockRepo = new Mock<IUserRepository>();
+            _userService = new UserService(_mockRepo.Object);
+        }
+
+        [Fact]
+        public async Task AddXpToUserAsync_ValidXp_UpdatesTotalAndTopicXp()
+        {
+            // Arrange
+            var user = new User { Username = "Callum", TotalXp = 100 };
+            string topic = "C# and .Net";
+            int xpGained = 15;
+
+            // Act
+            await _userService.AddXpToUserAsync(user, topic, xpGained);
+
+            // Assert
+            Assert.Equal(115, user.TotalXp);
+            Assert.True(user.TopicXp.ContainsKey(topic));
+            Assert.Equal(15, user.TopicXp[topic]);
+            
+            // Verify that SaveUserAsync was called exactly once
+            _mockRepo.Verify(repo => repo.SaveUserAsync(user), Times.Once);
+        }
+
+        [Fact]
+        public async Task AddXpToUserAsync_NegativeXp_ThrowsArgumentOutOfRangeException()
+        {
+            // Arrange
+            var user = new User { Username = "Callum", TotalXp = 100 };
+            string topic = "Clean Architecture";
+            int xpGained = -5; // Invalid XP
+
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => _userService.AddXpToUserAsync(user, topic, xpGained));
+            
+            // Verify that SaveUserAsync was NEVER called because it threw an exception
+            _mockRepo.Verify(repo => repo.SaveUserAsync(It.IsAny<User>()), Times.Never);
+        }
+    }
+}
