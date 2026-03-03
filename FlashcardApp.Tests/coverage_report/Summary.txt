@@ -1,0 +1,31 @@
+Summary
+  Generated on: 02/03/2026 - 21:35:42
+  Parser: OpenCover
+  Assemblies: 1
+  Classes: 10
+  Files: 10
+  Line coverage: 97%
+  Covered lines: 200
+  Uncovered lines: 6
+  Coverable lines: 206
+  Total lines: 521
+  Branch coverage: 80% (64 of 80)
+  Covered branches: 64
+  Total branches: 80
+  Method coverage: 100% (36 of 36)
+  Full method coverage: 88.8% (32 of 36)
+  Covered methods: 36
+  Fully covered methods: 32
+  Total methods: 36
+
+FlashcardApp.Core                                           97%
+  FlashcardApp.Core.Facades.FlashcardEngineFacade         95.2%
+  FlashcardApp.Core.Models.Flashcard                       100%
+  FlashcardApp.Core.Models.StudySessionResult              100%
+  FlashcardApp.Core.Models.User                            100%
+  FlashcardApp.Core.Repositories.InMemoryUserRepository    100%
+  FlashcardApp.Core.Repositories.JsonFileUserRepository   95.1%
+  FlashcardApp.Core.Services.GamificationService           100%
+  FlashcardApp.Core.Services.SettingsValidator             100%
+  FlashcardApp.Core.Services.StudySessionService           100%
+  FlashcardApp.Core.Services.UserService                   100%

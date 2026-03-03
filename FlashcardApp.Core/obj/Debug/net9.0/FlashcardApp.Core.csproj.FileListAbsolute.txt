@@ -22,3 +22,4 @@ D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\Flashca
 D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\refint\FlashcardApp.Core.dll
 D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.pdb
 D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\ref\FlashcardApp.Core.dll
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Core\obj\Debug\net9.0\FlashcardApp.Core.sourcelink.json

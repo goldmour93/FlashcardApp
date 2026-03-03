@@ -1,0 +1,187 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "FSRS.Core/1.0.7": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.5"
+        },
+        "compile": {
+          "lib/net8.0/FSRS.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FSRS.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "SonarAnalyzer.CSharp/10.19.0.132793": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "FSRS.Core/1.0.7": {
+      "sha512": "G4r0PyhQ04NM4AH7rCjw0cKKqnivGPdoo227KZM253wD6G81OPYg8ynl2S1ROqUZ811cCcA4lFKQ5BKuL68hsw==",
+      "type": "package",
+      "path": "fsrs.core/1.0.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fsrs.core.1.0.7.nupkg.sha512",
+        "fsrs.core.nuspec",
+        "lib/net8.0/FSRS.Core.dll",
+        "lib/net8.0/FSRS.Core.xml"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.5": {
+      "sha512": "cjnRtsEAzU73aN6W7vkWy8Phj5t3Xm78HSqgrbh/O4Q9SK/yN73wZVa21QQY6amSLQRQ/M8N+koGnY6PuvKQsw==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.5.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "SonarAnalyzer.CSharp/10.19.0.132793": {
+      "sha512": "vDQSFE+KU5pXfVNzz4R4CA0ZGuLO35Sn+a7z2nyV9EM/nHsvl+WFGZ61Uk9eTdbhta1YXzqCMXB2B+6dn6ykVA==",
+      "type": "package",
+      "path": "sonaranalyzer.csharp/10.19.0.132793",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/SonarAnalyzer.CSharp.dll",
+        "images/sonarsource_64.png",
+        "licenses/LICENSE.txt",
+        "licenses/THIRD_PARTY_LICENSES/Google.Protobuf-LICENSE.txt",
+        "licenses/THIRD_PARTY_LICENSES/StyleCop.Analyzers-LICENSE.txt",
+        "sonaranalyzer.csharp.10.19.0.132793.nupkg.sha512",
+        "sonaranalyzer.csharp.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "FSRS.Core >= 1.0.7",
+      "SonarAnalyzer.CSharp >= 10.19.0.132793"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Callum\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.Core\\FlashcardApp.Core.csproj",
+      "projectName": "FlashcardApp.Core",
+      "projectPath": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.Core\\FlashcardApp.Core.csproj",
+      "packagesPath": "C:\\Users\\Callum\\.nuget\\packages\\",
+      "outputPath": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.Core\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Callum\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "FSRS.Core": {
+            "target": "Package",
+            "version": "[1.0.7, )"
+          },
+          "SonarAnalyzer.CSharp": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[10.19.0.132793, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

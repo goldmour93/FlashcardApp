@@ -1,0 +1,186 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json;
+using System.Threading.Tasks;
+using FlashcardApp.Core.Interfaces;
+using FlashcardApp.Core.Models;
+using Npgsql;
+
+namespace FlashcardApp.Core.Repositories
+{
+    /// <summary>
+    /// A PostgreSQL-backed repository for storing users and their flashcard decks.
+    /// </summary>
+    public class PostgresUserRepository : IUserRepository
+    {
+        private readonly string _connectionString;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PostgresUserRepository"/> class.
+        /// </summary>
+        /// <param name="connectionString">The PostgreSQL connection string.</param>
+        public PostgresUserRepository(string connectionString)
+        {
+            _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
+        }
+
+        public async Task<User?> GetUserByIdAsync(Guid id)
+        {
+            await using var conn = new NpgsqlConnection(_connectionString);
+            await conn.OpenAsync();
+            
+            // Get User
+            await using var cmd = new NpgsqlCommand("SELECT Id, Username, TotalXp, DailyLimit, DesiredRetention, TopicXp FROM Users WHERE Id = @Id", conn);
+            cmd.Parameters.AddWithValue("Id", id);
+
+            User? user = null;
+            await using var reader = await cmd.ExecuteReaderAsync();
+            if (await reader.ReadAsync())
+            {
+                user = new User
+                {
+                    Id = reader.GetGuid(0),
+                    Username = reader.GetString(1),
+                    TotalXp = reader.GetInt32(2),
+                    DailyLimit = reader.GetInt32(3),
+                    DesiredRetention = reader.GetDouble(4),
+                    TopicXp = reader.IsDBNull(5) ? new Dictionary<string, int>() : JsonSerializer.Deserialize<Dictionary<string, int>>(reader.GetString(5)) ?? new Dictionary<string, int>(),
+                    Deck = new List<Flashcard>()
+                };
+            }
+            await reader.CloseAsync();
+
+            if (user != null)
+            {
+                // Get Flashcards
+                await using var cardCmd = new NpgsqlCommand("SELECT Id, Front, Back, Topic, FsrsCard FROM Flashcards WHERE UserId = @UserId", conn);
+                cardCmd.Parameters.AddWithValue("UserId", id);
+                await using var cardReader = await cardCmd.ExecuteReaderAsync();
+                while (await cardReader.ReadAsync())
+                {
+                    var card = new Flashcard
+                    {
+                        Id = cardReader.GetGuid(0),
+                        Front = cardReader.GetString(1),
+                        Back = cardReader.GetString(2),
+                        Topic = cardReader.IsDBNull(3) ? string.Empty : cardReader.GetString(3),
+                        FsrsCard = JsonSerializer.Deserialize<FSRS.Core.Models.Card>(cardReader.GetString(4)) ?? new FSRS.Core.Models.Card()
+                    };
+                    user.Deck.Add(card);
+                }
+            }
+
+            return user;
+        }
+
+        public async Task<User?> GetUserByUsernameAsync(string username)
+        {
+            await using var conn = new NpgsqlConnection(_connectionString);
+            await conn.OpenAsync();
+            
+            // Get User
+            await using var cmd = new NpgsqlCommand("SELECT Id, Username, TotalXp, DailyLimit, DesiredRetention, TopicXp FROM Users WHERE Username = @Username", conn);
+            cmd.Parameters.AddWithValue("Username", username);
+
+            User? user = null;
+            await using var reader = await cmd.ExecuteReaderAsync();
+            if (await reader.ReadAsync())
+            {
+                user = new User
+                {
+                    Id = reader.GetGuid(0),
+                    Username = reader.GetString(1),
+                    TotalXp = reader.GetInt32(2),
+                    DailyLimit = reader.GetInt32(3),
+                    DesiredRetention = reader.GetDouble(4),
+                    TopicXp = reader.IsDBNull(5) ? new Dictionary<string, int>() : JsonSerializer.Deserialize<Dictionary<string, int>>(reader.GetString(5)) ?? new Dictionary<string, int>(),
+                    Deck = new List<Flashcard>()
+                };
+            }
+            await reader.CloseAsync();
+
+            if (user != null)
+            {
+                // Get Flashcards
+                await using var cardCmd = new NpgsqlCommand("SELECT Id, Front, Back, Topic, FsrsCard FROM Flashcards WHERE UserId = @UserId", conn);
+                cardCmd.Parameters.AddWithValue("UserId", user.Id);
+                await using var cardReader = await cardCmd.ExecuteReaderAsync();
+                while (await cardReader.ReadAsync())
+                {
+                    var card = new Flashcard
+                    {
+                        Id = cardReader.GetGuid(0),
+                        Front = cardReader.GetString(1),
+                        Back = cardReader.GetString(2),
+                        Topic = cardReader.IsDBNull(3) ? string.Empty : cardReader.GetString(3),
+                        FsrsCard = JsonSerializer.Deserialize<FSRS.Core.Models.Card>(cardReader.GetString(4)) ?? new FSRS.Core.Models.Card()
+                    };
+                    user.Deck.Add(card);
+                }
+            }
+
+            return user;
+        }
+
+        public async Task SaveUserAsync(User user)
+        {
+            if (user == null) throw new ArgumentNullException(nameof(user));
+
+            await using var conn = new NpgsqlConnection(_connectionString);
+            await conn.OpenAsync();
+            
+            await using var transaction = await conn.BeginTransactionAsync();
+
+            try
+            {
+                await using var cmd = new NpgsqlCommand(@"
+                    INSERT INTO Users (Id, Username, TotalXp, DailyLimit, DesiredRetention, TopicXp)
+                    VALUES (@Id, @Username, @TotalXp, @DailyLimit, @DesiredRetention, @TopicXp::jsonb)
+                    ON CONFLICT (Id) DO UPDATE 
+                    SET Username = @Username,
+                        TotalXp = @TotalXp,
+                        DailyLimit = @DailyLimit,
+                        DesiredRetention = @DesiredRetention,
+                        TopicXp = @TopicXp::jsonb;", conn, transaction);
+
+                cmd.Parameters.AddWithValue("Id", user.Id);
+                cmd.Parameters.AddWithValue("Username", user.Username);
+                cmd.Parameters.AddWithValue("TotalXp", user.TotalXp);
+                cmd.Parameters.AddWithValue("DailyLimit", user.DailyLimit);
+                cmd.Parameters.AddWithValue("DesiredRetention", user.DesiredRetention);
+                cmd.Parameters.AddWithValue("TopicXp", JsonSerializer.Serialize(user.TopicXp));
+
+                await cmd.ExecuteNonQueryAsync();
+
+                // Save Flashcards
+                foreach (var card in user.Deck)
+                {
+                    await using var cardCmd = new NpgsqlCommand(@"
+                        INSERT INTO Flashcards (Id, UserId, Front, Back, Topic, FsrsCard)
+                        VALUES (@Id, @UserId, @Front, @Back, @Topic, @FsrsCard::jsonb)
+                        ON CONFLICT (Id) DO UPDATE 
+                        SET Front = @Front,
+                            Back = @Back,
+                            Topic = @Topic,
+                            FsrsCard = @FsrsCard::jsonb;", conn, transaction);
+
+                    cardCmd.Parameters.AddWithValue("Id", card.Id);
+                    cardCmd.Parameters.AddWithValue("UserId", user.Id);
+                    cardCmd.Parameters.AddWithValue("Front", card.Front);
+                    cardCmd.Parameters.AddWithValue("Back", card.Back);
+                    cardCmd.Parameters.AddWithValue("Topic", card.Topic);
+                    cardCmd.Parameters.AddWithValue("FsrsCard", JsonSerializer.Serialize(card.FsrsCard));
+
+                    await cardCmd.ExecuteNonQueryAsync();
+                }
+
+                await transaction.CommitAsync();
+            }
+            catch
+            {
+                await transaction.RollbackAsync();
+                throw;
+            }
+        }
+    }
+}

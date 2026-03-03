@@ -1,0 +1,31 @@
+<Window x:Class="FlashcardApp.WpfUI.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FlashcardApp" Height="400" Width="500" WindowStartupLocation="CenterScreen" MinHeight="400" MinWidth="500">
+
+    <Grid Margin="24">
+        <Border Background="{StaticResource App.BrushSurface}"
+                CornerRadius="{StaticResource App.CornerRadiusMedium}"
+                Padding="30"
+                Effect="{StaticResource App.ShadowLow}"
+                BorderBrush="{StaticResource App.BrushBorder}"
+                BorderThickness="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="430">
+            <StackPanel>
+                <TextBlock Text="Welcome" FontSize="28" FontWeight="SemiBold" Margin="0,0,0,6" />
+                <TextBlock Text="Sign in to continue your learning session" Foreground="{StaticResource App.BrushTextMuted}" Margin="0,0,0,20" MaxWidth="300" />
+
+                <TextBlock Text="Username" FontWeight="SemiBold" Margin="0,0,0,6" />
+                <TextBox x:Name="UsernameTextBox" Margin="0,0,0,16" />
+
+                <Button x:Name="LoginButton"
+                        Content="Continue"
+                        Click="LoginButton_Click"
+                        Height="46"
+                        Style="{StaticResource Button.Primary}" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

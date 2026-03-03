@@ -1,107 +1,98 @@
-# Systematic Software Testing: Planning and Application (PRES1)
+# Systematic Software Testing: Planning and Application (PRES1 / WRIT1)
 
-## ?? Presentation Goal & Overview (Slide 1 & 2)
-**Goal:** To demonstrate the application of systematic software testing�including static analysis, unit testing, and formal test case design�to a Spaced Repetition Flashcard Application.
-
-*(Note for Slide 2: Ensure you paste your OneDrive/YouTube video link here before submission!)*
+## Presentation Goal & Overview
+**Goal:** Demonstrate a systematic testing process for *FlashcardApp* using static analysis, unit tests, integration tests, coverage, and documented black-box/system test scenarios.
 
 ---
 
-## 1. Introduction (12%)
-*   **What is Systematic Software Testing?** It is a structured, destructive process designed to identify defects (bugs) in software before they cause failures in production. It ensures quality and functionality through defined phases.
-*   **The Big Myth:** Testing is not meant to prove that software works; it is meant to break it.
-*   **Relevance:** As seen in historical failures (e.g., Therac-25), executing a defect leads to system failure. Systematic testing mitigates this risk, saving time, money, and reputation.
+## Testing Tech Stack
+- **Language/Runtime:** C# / .NET 9
+- **IDE:** JetBrains Rider
+- **Unit testing framework:** xUnit
+- **Mocking:** Moq
+- **Coverage:** Coverlet (collector + msbuild)
+- **Static analysis:** SonarAnalyzer.CSharp (Roslyn analyzer via `FlashcardApp.Core.csproj`)
 
 ---
 
-## 2. Case Study (16%)
-*   **The System:** A C# .NET 9 Spaced Repetition Flashcard App (incorporating the FSRS algorithm).
-*   **Rationale for Selection:** The application relies on complex mathematical scheduling (FSRS) and gamification logic (XP calculation). If a defect exists in the `SettingsValidator` (e.g., allowing a retention rate of 150%), the algorithm will fail, destroying the user's study schedule.
-*   **Importance:** Systematic testing is critical here because the core value of the app relies entirely on the accuracy of its background logic, which cannot be easily verified by just clicking around the UI.
+## 1. Introduction (LO1)
+Systematic testing is a structured process to find defects early through planned activities: requirements analysis → test planning → test design → environment setup → execution → reporting/closure. The goal is measurable evidence of quality (pass/fail results, coverage, and static analysis findings).
 
 ---
 
-## 3. Testing Plan (16%)
-### Scope of Testing
-*   **In Scope:** Core domain logic (`GamificationService`, `SettingsValidator`), User state management (`UserService`), and JSON persistence via `IUserRepository`.
-*   **Out of Scope:** UI layout/styling (WPF XAML) and third-party FSRS library internals.
-
-### Testing Objectives
-1.  Verify that gamification logic correctly assigns XP based on user ratings.
-2.  Ensure system boundaries (e.g., retention rates) reject invalid data gracefully.
-3.  Confirm that user data (Total XP, Topic XP) is accurately updated and saved.
-
-### Testing Approach
-*   **Static Analysis Integration:** We integrated **SonarAnalyzer.CSharp** (a Roslyn-based static code analyzer) directly into the `.csproj`. This acts as our "bugs tool" to detect code smells, unused variables, and maintainability issues *without* executing the code.
-*   **Unit Testing Role:** We used **xUnit** and **Moq** to isolate individual classes. This ensures robust, modular functionality by verifying that each component works perfectly in isolation before integration.
+## 2. Case Study (LO1/LO2)
+**FlashcardApp** is a .NET 9 spaced-repetition flashcard app integrating the FSRS scheduling library. The most defect-prone areas are: input validation (retention/rating), session-selection logic, XP rules, and persistence (JSON file I/O). Testing focuses on the Core layer where the business rules live.
 
 ---
 
-## 4. Testing Phases (STLC) (16%)
-We applied the Software Testing Life Cycle (STLC) to our case study:
-1.  **Requirement Analysis:** Identified that the app needs to calculate XP based on a 1-4 rating scale.
-2.  **Test Planning:** Decided to use xUnit for dynamic testing and SonarAnalyzer for static testing.
-3.  **Test Case Design:** Used Equivalence Partitioning and Boundary Value Analysis to write C# test methods.
-4.  **Environment Setup:** Configured the `FlashcardApp.Tests` project with Moq and xUnit dependencies.
-5.  **Test Execution:** Ran `dotnet test` to execute the suite.
-6.  **Test Cycle Closure:** Reviewed the pass/fail statistics and static analysis warnings to evaluate software quality.
+## 3. Testing Plan (LO2/LO3)
+### Scope
+**In scope**
+- Core domain logic: `GamificationService`, `SettingsValidator`, session selection (`StudySessionService`) and facade orchestration (`FlashcardEngineFacade`).
+- Persistence: `JsonFileUserRepository` (file I/O integration).
+
+**Out of scope**
+- WPF UI layout/styling (manual smoke-tested only).
+- Internal correctness of the third-party FSRS library (we validate integration boundaries and usage).
+
+### Testing types
+- **White-box unit testing:** pure logic methods/services.
+- **White-box integration testing:** persistence boundaries (JSON repository writing/reading).
+- **Black-box / system testing (planned + evidenced):** end-to-end scenarios described at the facade/UI level (treating Core as the system boundary).
+
+### Functional + non-functional testing plan (WRIT1 requirement)
+- **Functional:** ratings, XP, retention validation, session card selection, user creation/load/save.
+- **Performance (lightweight):** JSON repository operations complete within acceptable time for small datasets (smoke/perf check).
+- **Security (lightweight):** invalid inputs don’t crash the app; corrupted JSON fails safe; file-not-found scenarios handled gracefully.
 
 ---
 
-## 5. Test Case Design (20%)
-We utilized two primary black-box testing techniques:
+## 4. Test Case Design Techniques (LO2/LO4)
+### Boundary Value Analysis (BVA)
+**Target:** `SettingsValidator.ValidateDesiredRetention(double desiredRetention)`
+- **Rule (as implemented):** retention must be between **0.70 and 0.99 inclusive**.
+- Tests cover valid boundaries (0.70, 0.99) and invalid values (0.69, 1.00).
 
-### A. Boundary Value Analysis (BVA)
-*   **Target:** `SettingsValidator.ValidateDesiredRetention(double retention)`
-*   **Rule:** Retention must be strictly between `0.70` and `0.99`.
-*   **Test Cases (Pass/Fail):**
-    *   *Pass Scenario (Lower Boundary):* Input `0.70` -> Expected: No Exception.
-    *   *Pass Scenario (Upper Boundary):* Input `0.99` -> Expected: No Exception.
-    *   *Fail Scenario (Just Below):* Input `0.69` -> Expected: `ArgumentOutOfRangeException`.
-    *   *Fail Scenario (Just Above):* Input `1.00` -> Expected: `ArgumentOutOfRangeException`.
+### Equivalence Partitioning (EP)
+**Target:** `GamificationService.CalculateXp(int rating)`
+- Valid partitions: ratings 1–4
+- Invalid partitions: anything else (e.g., 0, 5, -5) throws `ArgumentOutOfRangeException`
 
-### B. Equivalence Partitioning (EP)
-*   **Target:** `GamificationService.CalculateXp(int rating)`
-*   **Rule:** Ratings 1-4 are valid. Anything else is invalid.
-*   **Test Cases (Pass/Fail):**
-    *   *Pass Scenario (Valid Partition):* Input `3` (Good) -> Expected: Returns `10` XP.
-    *   *Fail Scenario (Invalid Partition - High):* Input `5` -> Expected: `ArgumentOutOfRangeException`.
-    *   *Fail Scenario (Invalid Partition - Low):* Input `0` -> Expected: `ArgumentOutOfRangeException`.
+### Isolation / interaction testing (Mocking)
+**Target:** `UserService`
+- Moq is used to isolate `IUserRepository` so we can verify behavioral expectations (e.g., `SaveUserAsync` called once on success; not called on failed validation).
 
 ---
 
-## 6. Applications of Testing and Results (20%)
-### Applying the Tests
-We executed the designed test cases using the `dotnet test` command. 
-*   **Unit Testing Results:** 45 total tests were discovered and executed. **100% Pass Rate (45/45).**
-*   **Mocking Results:** Using `Moq`, we successfully verified that `UserService.AddXpToUserAsync` calls the repository `SaveUserAsync` exactly once on success, and *never* calls it if an invalid XP amount throws an exception.
+## 5. Integration Testing (JSON Persistence)
+Integration tests target `JsonFileUserRepository` to verify real file I/O:
+- Round-trip user persistence (save then load)
+- Case-insensitive username lookups
+- Resilience: missing file, empty file, corrupted JSON
 
-### Static Analysis Results
-The integration of **SonarAnalyzer.CSharp** yielded immediate code quality metrics and warnings during the build process:
-*   *Warning S2325:* Suggested making methods like `CalculateXp` static, as they do not use instance data.
-*   *Warning S1481:* Detected an unused local variable (`reviewLog`) in `FlashcardEngineFacade.cs`.
-
-### Key Insights & Implications
-1.  **Early Defect Detection:** Static analysis found maintainability issues (like unused variables) that unit tests would have missed.
-2.  **Robustness:** By testing the extreme boundaries (e.g., `0.69` retention), we proved the system is protected against catastrophic mathematical failures in the FSRS algorithm.
-3.  **Modularity:** Using Moq forced us to rely on Dependency Injection (`IUserRepository`), proving that our architecture is clean, modular, and highly testable.
+> Note: the repository may use synchronization internally; we currently validate correctness/resilience outcomes, not heavy concurrent load.
 
 ---
 
-## 6b. Integration Testing (JSON persistence)
+## 6. Applications of Testing & Results (LO3/LO4)
+### Dynamic testing results
+- Current automated test run (verified locally): **52 total, 52 passed, 0 failed, 0 skipped**
 
-### Why integration tests?
-Unit tests can't catch file I/O defects like:
-- missing or locked files
-- corrupted JSON
-- incorrect serialization of user data
+### Static analysis results
+SonarAnalyzer is integrated into the build so maintainability issues can be flagged early. In earlier iterations, it highlighted unused variables and “make method static” suggestions; changes were applied during cleanup and the solution currently builds cleanly.
 
-### What we added
-We added JSON repository integration tests:
-- `FlashcardApp.Tests/Integration/JsonFileUserRepositoryIntegrationTests.cs`
-- They round-trip a `User` + `Deck`, validate ID assignment, and verify resilience to corrupted JSON
+---
 
-### How to run it
+## 7. Black-box / System Testing (WRIT1 requirement)
+System tests are described at the workflow level (input/output observable behavior), for example:
+- Login with username → choose topic → start session → show answer → rate card → XP + stats update
+- Invalid retention/rating inputs are rejected without crashing
+
+For WRIT1, include screenshots of the UI screens and a pass/fail table for these scenarios.
+
+---
+
+## How to Run the Tests
 ```powershell
  dotnet test .\FlashcardApp.Tests\FlashcardApp.Tests.csproj -c Debug -v minimal
 ```

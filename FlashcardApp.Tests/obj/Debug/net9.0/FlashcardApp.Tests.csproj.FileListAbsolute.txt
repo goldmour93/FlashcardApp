@@ -218,3 +218,4 @@ D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Tests\obj\Debug\net9.0\refint
 D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Tests\obj\Debug\net9.0\FlashcardApp.Tests.pdb
 D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Tests\obj\Debug\net9.0\FlashcardApp.Tests.genruntimeconfig.cache
 D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Tests\obj\Debug\net9.0\ref\FlashcardApp.Tests.dll
+D:\Coding\Uni\Testing\Pres1 (1)\Pres1\FlashcardApp.Tests\obj\Debug\net9.0\FlashcardApp.Tests.sourcelink.json

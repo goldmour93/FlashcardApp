@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlashcardApp.WpfUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+601d0d661eb03c765b58f447c7dd053429aeda80")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlashcardApp.WpfUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlashcardApp.WpfUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

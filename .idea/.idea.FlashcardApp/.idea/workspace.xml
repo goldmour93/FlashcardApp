@@ -5,7 +5,139 @@
     <projectFile>FlashcardApp.WpfUI/FlashcardApp.WpfUI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93f5f297-23b1-47b1-97c0-c4a447dad3ba" name="Changes" comment="" />
+    <list default="true" id="93f5f297-23b1-47b1-97c0-c4a447dad3ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.FlashcardApp/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.FlashcardApp/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/28C546FA843F814F9FB91D2F32BA1EBA/1093589A17810A15D6D66CD927315004" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/28C546FA843F814F9FB91D2F32BA1EBA/45C05371E136E85F94C8382CC65248D4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/28C546FA843F814F9FB91D2F32BA1EBA/4D69A1AE8B3208190384A3D60B9A9E9C" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/37A4307F454E554F9021309DD3604517/E3CCC1A01766D8D5DA23A32447835CE6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/81F3EAAB2947B5419A3B7A41861A1639/3626553995E0DA7A57014273266F1B5E" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/81F3EAAB2947B5419A3B7A41861A1639/6D84D8F8F89D7826818FA0B6762D850F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/81F3EAAB2947B5419A3B7A41861A1639/8168D29F741F542039B224FB3EEA9BE7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/81F3EAAB2947B5419A3B7A41861A1639/DF85AC239D9592E8B9B71D3E9DF1F7C1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/45C05371E136E85F94C8382CC65248D4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/4D69A1AE8B3208190384A3D60B9A9E9C" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/6BE606A747B9CB633EF747BBE370B7C7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/7B200F60CCE71C19888FA838D684A481" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/9F215EDD2C74434174328B44BDCE49D5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/D6064185E2CBFFD0A1A677E175CA8C81" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/ADD46C488C99734EB42CE6222735147B/ED51F8422F8E31F4909A7FBF376F3AFB" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9C1B482C1094FD439FF84E8FFCEBDCE5/B50747ED1FBCFA4EBE1D11BF67B74D81/1C8843842C0965B613FEBCF575F23EC2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/46A66978438C8F46AE89A01990164D95/0EFE0560EEE8F3B25D050BCB10393175" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/46A66978438C8F46AE89A01990164D95/80BE9AACB0A29A5AE750217BAE73BED7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/46A66978438C8F46AE89A01990164D95/E92ECE72C55844544081109A323E9DF1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/80B9FA560E9DD241AE97A8D66F45445E/84BC1A796DE3C215D6F4AF200F68D4C1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/80B9FA560E9DD241AE97A8D66F45445E/8797BE05CD31055489876DB37DAF1E9D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D36953050728DD43B0E79A96AFD4B32E/014D867FB5E637E19C7856753DE598D7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D36953050728DD43B0E79A96AFD4B32E/48E46E215156D5921223687F58337710" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D36953050728DD43B0E79A96AFD4B32E/8823269C3C0BD174638F70F742339D85" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D36953050728DD43B0E79A96AFD4B32E/CBDBE3E9741DA4BFB8323EA024DBAAA1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D36953050728DD43B0E79A96AFD4B32E/EA08A1E9FB32105E9FE9D98BEC922043" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D36953050728DD43B0E79A96AFD4B32E/FCB2647B482A3B724740F1BFF1A2180A" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/050623AF3ABF71494A20A0C8D637797E" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/0E1D086F92A7AF78F7E81A572AF7AA01" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/3626553995E0DA7A57014273266F1B5E" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/5FF6C3CEACD77ECFBB62D36DAAB2FA22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/7B206A02EC4522BF47D12D3CC094B0AF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/8168D29F741F542039B224FB3EEA9BE7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/A618D1D389DE0B3D2185504A776ADE51" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/CopilotSnapshots/9FECAEF2CD43BA43A4B6BD49CAE66936/D92C975154CABE4F99AB3462ED3AA110/F8201DCE04A37D41B156FEB0AADC03A6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/FlashcardApp/CopilotIndices/17.14.1584.41681/SemanticSymbols.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/FlashcardApp/v17/.wsuo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Pres1/CopilotIndices/17.14.1584.41681/SemanticSymbols.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Pres1/FileContentIndex/3f361fb0-9352-4903-a897-3c8a0fdbdab3.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/Pres1/v17/DocumentLayout.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/flashcardapp.strings.v9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/FlashcardApp.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/Integration/JsonFileUserRepositoryIntegrationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/StudySessionServiceTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Tests.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/Microsoft.TestPlatform.CommunicationUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/Moq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/coverage_.opencover.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/coverage_report/Summary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/FlashcardApp.Tests.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Release/net9.0/FlashcardApp.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/LoginWindow.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.WpfUI.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/Microsoft.Extensions.Diagnostics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/Flashcar.CC709633.Up2Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/LoginWindow.g.i.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Release/net9.0-windows/FlashcardApp.WpfUI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Release/net9.0-windows/FlashcardApp.WpfUI.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Release/net9.0-windows/FlashcardApp.WpfUI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FlashcardApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlashcardApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/bin/Debug/net9.0/FlashcardApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/bin/Debug/net9.0/FlashcardApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/bin/Debug/net9.0/FlashcardApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/bin/Debug/net9.0/FlashcardApp.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/FlashcardApp.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/ref/FlashcardApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/ref/FlashcardApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/refint/FlashcardApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Core/obj/Debug/net9.0/refint/FlashcardApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_FlashcardApp.Tests" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/.msCoverageSourceRootsMapping_FlashcardApp.Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_FlashcardApp.Tests" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/CoverletSourceRootsMapping_FlashcardApp.Tests" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/bin/Debug/net9.0/FlashcardApp.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/FlashcardApp.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/ref/FlashcardApp.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/ref/FlashcardApp.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/refint/FlashcardApp.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.Tests/obj/Debug/net9.0/refint/FlashcardApp.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/TopicSelectionWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/TopicSelectionWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.WpfUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.WpfUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.WpfUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/bin/Debug/net9.0-windows/FlashcardApp.WpfUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/App.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/App.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/FlashcardApp.WpfUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/LoginWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/LoginWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/LoginWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/LoginWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/MainWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/MainWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/MainWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/MainWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/TopicSelectionWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/TopicSelectionWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/TopicSelectionWindow.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/TopicSelectionWindow.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/TopicSelectionWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/TopicSelectionWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/ref/FlashcardApp.WpfUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/ref/FlashcardApp.WpfUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/refint/FlashcardApp.WpfUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.WpfUI/obj/Debug/net9.0-windows/refint/FlashcardApp.WpfUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestsReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/TestsReadMe.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,10 +161,26 @@
     <option name="printScope" value="4" />
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "goldmour93"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/goldmour93/FlashcardApp.git",
+    "accountId": "be8019df-0c29-493b-a0cc-1f0d0dfee3a3"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5cd654cead74cde94264c29ee61f7c4e8e930/cf/a08152d5/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FlashcardApp.Tests/Integration/JsonFileUserRepositoryIntegrationTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -44,22 +192,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.FlashcardApp.ConsoleUI.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Project.FlashcardApp.WpfUI.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ToolWindow.GitHub Copilot Chat.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Coding/Uni/Testing/Pres1 (1)/Pres1/FlashcardApp.sln&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.FlashcardApp.ConsoleUI.executor": "Run",
+    ".NET Project.FlashcardApp.WpfUI.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ToolWindow.GitHub Copilot Chat.ShowToolbar": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Coding/Uni/Testing/Pres1 (1)/Pres1/FlashcardApp.sln",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Project.FlashcardApp.WpfUI">
     <configuration name="FlashcardApp.ConsoleUI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -119,7 +268,17 @@
       <workItem from="1772481476386" duration="101000" />
       <workItem from="1772481644382" duration="2600000" />
       <workItem from="1772484432201" duration="7966000" />
+      <workItem from="1772493168123" duration="4975000" />
     </task>
+    <task id="LOCAL-00001" summary="First Push">
+      <option name="closed" value="true" />
+      <created>1772493456138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772493456139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,84 +288,23 @@
     <option name="coveragePercentColumnWidth" value="150" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="372" />
+    <option name="symbolColumnWidth" value="422" />
     <coverage-tree-state>
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
           <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Models 100% 0/11" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Repositories 95% 5/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Repositories 95% 5/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="JsonFileUserRepository 95% 5/92" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Repositories 95% 5/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="JsonFileUserRepository 95% 5/92" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GetUserByIdAsync(Guid) 100% 0/5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
-        <path>
-          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 70% 200/657" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="(1.0.0.0, net9.0) 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="FlashcardApp.Core 96% 7/189" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="Repositories 95% 5/108" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="JsonFileUserRepository 95% 5/92" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="GetUserByIdAsync(Guid) 100% 0/5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="MoveNext() 100% 0/5" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-        </path>
       </expand>
       <select />
     </coverage-tree-state>
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Push" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
