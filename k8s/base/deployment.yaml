@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flashcardapp-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flashcardapp-api
+  template:
+    metadata:
+      labels:
+        app: flashcardapp-api
+    spec:
+      containers:
+        - name: api
+          image: flashcardapp:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: "Production"
+            - name: ConnectionStrings__Default
+              valueFrom:
+                secretKeyRef:
+                  name: flashcardapp-db-secret
+                  key: connection-string
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: flashcardapp-api
+spec:
+  selector:
+    app: flashcardapp-api
+  ports:
+    - port: 8080
+      targetPort: 8080
+

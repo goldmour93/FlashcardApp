@@ -1,6 +1,7 @@
-﻿﻿using System;
+﻿using System;
 using System.IO;
 using System.Windows;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using FlashcardApp.Core.Interfaces;
@@ -24,9 +25,18 @@ public partial class App : Application
         AppHost = Host.CreateDefaultBuilder()
             .ConfigureServices((context, services) =>
             {
-                var dataDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FlashcardApp");
-                var filePath = Path.Combine(dataDir, "users.json");
-                services.AddSingleton<IUserRepository>(new JsonFileUserRepository(filePath));
+                var connectionString = context.Configuration.GetConnectionString("Default");
+
+                if (!string.IsNullOrWhiteSpace(connectionString))
+                {
+                    services.AddSingleton<IUserRepository>(new PostgresUserRepository(connectionString));
+                }
+                else
+                {
+                    var dataDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FlashcardApp");
+                    var filePath = Path.Combine(dataDir, "users.json");
+                    services.AddSingleton<IUserRepository>(new JsonFileUserRepository(filePath));
+                }
 
                 // Services
                 services.AddSingleton<UserService>();

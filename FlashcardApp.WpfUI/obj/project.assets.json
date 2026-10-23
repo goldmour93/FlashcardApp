@@ -600,6 +600,22 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Npgsql/9.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/10.0.3": {
         "type": "package",
         "compile": {
@@ -708,7 +724,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "FSRS.Core": "1.0.7"
+          "FSRS.Core": "1.0.7",
+          "Npgsql": "9.0.3"
         },
         "compile": {
           "bin/placeholder/FlashcardApp.Core.dll": {}
@@ -1599,6 +1616,23 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Npgsql/9.0.3": {
+      "sha512": "tPvY61CxOAWxNsKLEBg+oR646X4Bc8UmyQ/tJszL/7mEmIXQnnBhVJZrZEEUv0Bstu0mEsHZD5At3EO8zQRAYw==",
+      "type": "package",
+      "path": "npgsql/9.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "npgsql.9.0.3.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/10.0.3": {
       "sha512": "IuZXyF3K5X+mCsBKIQ87Cn/V4Nyb39vyCbzfH/AkoneSWNV/ExGQ/I0m4CEaVAeFh9fW6kp2NVObkmevd1Ys7A==",
       "type": "package",
@@ -1816,19 +1850,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Callum\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin123\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
+      "projectUniqueName": "C:\\Users\\Admin123\\Documents\\Rider Projects\\FlashcardApp\\FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
       "projectName": "FlashcardApp.WpfUI",
-      "projectPath": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
-      "packagesPath": "C:\\Users\\Callum\\.nuget\\packages\\",
-      "outputPath": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.WpfUI\\obj\\",
+      "projectPath": "C:\\Users\\Admin123\\Documents\\Rider Projects\\FlashcardApp\\FlashcardApp.WpfUI\\FlashcardApp.WpfUI.csproj",
+      "packagesPath": "C:\\Users\\Admin123\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin123\\Documents\\Rider Projects\\FlashcardApp\\FlashcardApp.WpfUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Callum\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Admin123\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0-windows"
@@ -1838,10 +1872,11 @@
       },
       "frameworks": {
         "net9.0-windows7.0": {
+          "framework": "net9.0-windows7.0",
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.Core\\FlashcardApp.Core.csproj": {
-              "projectPath": "D:\\Coding\\Uni\\Testing\\Pres1 (1)\\Pres1\\FlashcardApp.Core\\FlashcardApp.Core.csproj"
+            "C:\\Users\\Admin123\\Documents\\Rider Projects\\FlashcardApp\\FlashcardApp.Core\\FlashcardApp.Core.csproj": {
+              "projectPath": "C:\\Users\\Admin123\\Documents\\Rider Projects\\FlashcardApp\\FlashcardApp.Core\\FlashcardApp.Core.csproj"
             }
           }
         }
@@ -1860,6 +1895,7 @@
     },
     "frameworks": {
       "net9.0-windows7.0": {
+        "framework": "net9.0-windows7.0",
         "targetAlias": "net9.0-windows",
         "dependencies": {
           "Microsoft.Extensions.Hosting": {
@@ -1886,7 +1922,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Admin123\\.dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,13 @@
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\bin\Release\net9.0\FlashcardApp.Core.deps.json
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\bin\Release\net9.0\FlashcardApp.Core.dll
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\bin\Release\net9.0\FlashcardApp.Core.pdb
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.csproj.AssemblyReference.cache
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.AssemblyInfoInputs.cache
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.AssemblyInfo.cs
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.sourcelink.json
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.dll
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\refint\FlashcardApp.Core.dll
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\FlashcardApp.Core.pdb
+C:\Users\Admin123\Documents\Rider Projects\FlashcardApp\FlashcardApp.Core\obj\Release\net9.0\ref\FlashcardApp.Core.dll
