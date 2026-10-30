@@ -7,15 +7,15 @@ WORKDIR /app
 COPY . .
 
 # Restore dependencies
-RUN dotnet restore FlashcardApp.Tests/FlashcardApp.Tests.csproj
+RUN dotnet restore tests/FlashcardApp.Tests.csproj
 
 # Run tests - fail the build if tests fail
-RUN dotnet test FlashcardApp.Tests/FlashcardApp.Tests.csproj \
+RUN dotnet test tests/FlashcardApp.Tests.csproj \
     --configuration Release \
     --no-restore
 
 # Publish the runnable API
-RUN dotnet publish FlashcardApp.Api/FlashcardApp.Api.csproj \
+RUN dotnet publish src/FlashcardApp.Api/FlashcardApp.Api.csproj \
     --configuration Release \
     --output /app/publish
 

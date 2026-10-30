@@ -1,13 +1,14 @@
-# Kubernetes configuration layout
+# Kubernetes layout
 
-This project follows a single Kubernetes config pattern with environment-specific files:
+Shared Deployment/Service: `k8s/base/`. Environment overlays: `k8s/overlays/dev/`, `qa/`, and `prod/`.
 
-- `k8s/dev/configmap-dev.yaml`
-- `k8s/dev/secret-dev.yaml`
-- `k8s/qa/configmap-qa.yaml`
-- `k8s/qa/secret-qa.yaml`
-- `k8s/prod/configmap-prod.yaml`
-- `k8s/prod/secret-prod.yaml`
+Each overlay expects an existing Kubernetes Secret named `flashcardapp-db-secret-dev`, `flashcardapp-db-secret-qa`, or `flashcardapp-db-secret-prod` with a `connection-string` key.
 
-The naming convention clearly identifies the environment and the resource type, which keeps config values easier to reason about and avoids mixing dev/qa/prod settings together.
+Commit only the `secret.example.yaml` templates; provision actual Secrets securely in the cluster. For example (in the correct namespace):
 
+```sh
+kubectl create secret generic flashcardapp-db-secret-dev --from-literal=connection-string="YOUR_DB_CONNECTION_STRING"
+kubectl apply -k k8s/overlays/dev
+```
+
+The examples are not automatically applied by Kustomize. Use distinct credentials for each environment.

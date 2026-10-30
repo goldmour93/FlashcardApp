@@ -1,12 +1,16 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.Core", "FlashcardApp.Core\FlashcardApp.Core.csproj", "{7195828A-FE86-4753-AEA0-D0C509FFC326}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.Core", "src\FlashcardApp.Core\FlashcardApp.Core.csproj", "{7195828A-FE86-4753-AEA0-D0C509FFC326}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.WpfUI", "FlashcardApp.WpfUI\FlashcardApp.WpfUI.csproj", "{1ED8C21F-BD47-4CE4-9739-293361E5472D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.WpfUI", "src\FlashcardApp.WpfUI\FlashcardApp.WpfUI.csproj", "{1ED8C21F-BD47-4CE4-9739-293361E5472D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.Tests", "FlashcardApp.Tests\FlashcardApp.Tests.csproj", "{FD4E91C0-3B83-4DB3-8612-ABFAB0900FFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.Tests", "tests\FlashcardApp.Tests.csproj", "{FD4E91C0-3B83-4DB3-8612-ABFAB0900FFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.Infrastructure", "src\FlashcardApp.Infrastructure\FlashcardApp.Infrastructure.csproj", "{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlashcardApp.Api", "src\FlashcardApp.Api\FlashcardApp.Api.csproj", "{2135482B-6E98-4712-95D7-5E105BF9310F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +58,30 @@ Global
 		{FD4E91C0-3B83-4DB3-8612-ABFAB0900FFE}.Release|x64.Build.0 = Release|Any CPU
 		{FD4E91C0-3B83-4DB3-8612-ABFAB0900FFE}.Release|x86.ActiveCfg = Release|Any CPU
 		{FD4E91C0-3B83-4DB3-8612-ABFAB0900FFE}.Release|x86.Build.0 = Release|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Debug|x64.Build.0 = Debug|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Debug|x86.Build.0 = Debug|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Release|x64.ActiveCfg = Release|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Release|x64.Build.0 = Release|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Release|x86.ActiveCfg = Release|Any CPU
+		{8FE0A913-A2EB-4E14-B776-624FA0BEAD9F}.Release|x86.Build.0 = Release|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Debug|x64.Build.0 = Debug|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Debug|x86.Build.0 = Debug|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Release|x64.ActiveCfg = Release|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Release|x64.Build.0 = Release|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Release|x86.ActiveCfg = Release|Any CPU
+		{2135482B-6E98-4712-95D7-5E105BF9310F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

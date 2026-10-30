@@ -1,0 +1,17 @@
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.DotSettings.user
+**/bin/
+**/obj/
+**/TestResults/
+**/coverage*.xml
+**/coverage_report/
+*.trx
+.env*
+!.env.example
+**/secret.yaml
+.DS_Store
+Thumbs.db
