@@ -1,56 +1,59 @@
 pipeline {
     agent any
-
-    environment {
-        REPO_URL = 'https://github.com/goldmour93/FlashcardApp.git'
-        BRANCH_NAME = 'main'
+    options {
+        skipDefaultCheckout(true)
     }
 
     stages {
         stage('Checkout') {
             steps {
-                echo "Cloning the latest ${BRANCH_NAME} branch"
-                git branch: BRANCH_NAME, url: REPO_URL
+                echo 'Checking out the project from GitHub'
+                checkout scm
             }
         }
 
         stage('Restore') {
             steps {
                 echo 'Restoring NuGet packages'
-                bat 'dotnet restore FlashcardApp.sln'
+                sh 'dotnet restore FlashcardApp.sln'
             }
         }
 
         stage('Build') {
             steps {
                 echo 'Building the solution'
-                bat 'dotnet build FlashcardApp.sln --configuration Release --no-restore'
+                sh 'dotnet build FlashcardApp.sln --configuration Release --no-restore'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running unit tests'
-                bat 'dotnet test tests\\FlashcardApp.Tests.csproj --configuration Release --no-build --logger "console;verbosity=minimal"'
+                echo 'Running .NET unit tests'
+                sh '''
+                    mkdir -p test-results
+                    dotnet test tests/FlashcardApp.Tests.csproj \
+                        --configuration Release \
+                        --no-build \
+                        --logger "junit;LogFilePath=test-results/results.xml"
+                '''
             }
-        }
-
-        stage('Finish') {
-            steps {
-                echo 'Pipeline completed successfully.'
+            post {
+                always {
+                    junit testResults: 'test-results/results.xml',
+                          skipPublishingChecks: true
+                    archiveArtifacts artifacts: 'test-results/results.xml',
+                                     allowEmptyArchive: true
+                }
             }
         }
     }
 
     post {
-        always {
-            echo 'Pipeline complete.'
-        }
         success {
-            echo 'Build and tests passed.'
+            echo 'Pipeline completed successfully.'
         }
         failure {
-            echo 'Build or tests failed.'
+            echo 'Pipeline failed.'
         }
     }
 }
