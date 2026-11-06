@@ -14,15 +14,15 @@ pipeline {
 
         stage('Restore') {
             steps {
-                echo 'Restoring NuGet packages'
-                sh 'dotnet restore FlashcardApp.sln'
+                echo 'Restoring test project dependencies'
+                sh 'dotnet restore tests/FlashcardApp.Tests.csproj'
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Building the solution'
-                sh 'dotnet build FlashcardApp.sln --configuration Release --no-restore'
+                echo 'Building the test project and dependencies'
+                sh 'dotnet build tests/FlashcardApp.Tests.csproj --configuration Release --no-restore'
             }
         }
 
