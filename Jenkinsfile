@@ -34,15 +34,13 @@ pipeline {
                     dotnet test tests/FlashcardApp.Tests.csproj \
                         --configuration Release \
                         --no-build \
-                        --logger "junit;LogFilePath=test-results/results.xml"
+                        --logger "junit;LogFilePath=/var/jenkins_home/workspace/FlashcardApp-Ci/test-results/results.xml"
                 '''
             }
             post {
                 always {
-                    junit testResults: 'test-results/results.xml',
-                          skipPublishingChecks: true
-                    archiveArtifacts artifacts: 'test-results/results.xml',
-                                     allowEmptyArchive: true
+                    archiveArtifacts artifacts: 'test-results/results.xml', allowEmptyArchive: true
+                    junit 'test-results/results.xml'
                 }
             }
         }
