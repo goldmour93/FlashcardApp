@@ -39,4 +39,4 @@ Windows users can use `src/FlashcardApp.Api/Run-FlashcardApp.ps1` to start Compo
 
 - WPF still has study-session logic in code-behind; moving this to view models should be a separate behaviour-preserving change.
 - The JSON flashcard converter does not currently persist FSRS review state. Restore that persistence before relying on review schedules across restarts.
-- Real Kubernetes Secrets must be provisioned separately; see `k8s/README.md`..
+- Real Kubernetes Secrets must be provisioned separately; see `k8s/README.md`.
