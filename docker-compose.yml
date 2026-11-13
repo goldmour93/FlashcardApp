@@ -1,9 +1,6 @@
-version: "3.9"
-
 services:
   postgres:
     image: postgres:16
-    container_name: flashcard-postgres-dev
     env_file:
       - ./.env
     environment:
@@ -21,10 +18,10 @@ services:
       retries: 10
 
   api:
+    image: "goldmour/flashcardapp-api:${IMAGE_TAG:-local}"
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: flashcard-api-dev
     env_file:
       - ./.env
     environment:

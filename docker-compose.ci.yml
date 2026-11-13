@@ -1,0 +1,7 @@
+# Used only by Jenkins. No host ports or developer containers are affected.
+# Docker Compose v2.24+ supports !reset for inherited port mappings.
+services:
+  postgres:
+    ports: !reset []
+  api:
+    ports: !reset []
