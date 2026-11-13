@@ -5,3 +5,5 @@ services:
     ports: !reset []
   api:
     ports: !reset []
+    build:
+      network: host
