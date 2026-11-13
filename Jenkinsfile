@@ -104,7 +104,14 @@ EOF
 
         stage('Push to Docker Hub') {
             when {
-                expression { env.GIT_BRANCH == 'origin/main' || env.BRANCH_NAME == 'main' }
+                expression {
+                    // Standalone Pipeline jobs may not populate GIT_BRANCH/BRANCH_NAME.
+                    // Only publish if this checkout is the currently fetched main commit.
+                    sh(
+                        script: 'test "$(git rev-parse HEAD)" = "$(git rev-parse refs/remotes/origin/main)"',
+                        returnStatus: true
+                    ) == 0
+                }
             }
             steps {
                 withCredentials([
@@ -140,7 +147,7 @@ EOF
             '''
         }
         success {
-            echo 'FlashcardApp CI, container checks and eligible image publishing completed successfully.'
+            echo 'FlashcardApp CI and container checks passed. See Push to Docker Hub stage for publication status.'
         }
         failure {
             echo 'Pipeline failed. Inspect the failing stage in Console Output.'
