@@ -66,6 +66,6 @@ The normal developer command remains `docker compose up --build`; use your own l
 
 With API and PostgreSQL running, request `GET /health/ready`. A healthy database yields HTTP 200 with `{"status":"ready"}`. Missing or unavailable PostgreSQL configuration yields HTTP 503. The existing root endpoint `GET /` remains a basic liveness check.
 
-### CI implementation notes
+### CI implementation notes.
 
 The Jenkins stage uses a disposable database and `docker compose down --volumes` in an isolated Compose project. It must never be pointed at a development or production database. If image publishing is unexpectedly skipped on `main`, inspect the `GIT_BRANCH`/ `BRANCH_NAME` values for your Jenkins job type. The change has not been run against the author's Jenkins installation and should be tested on the feature branch before merging.
