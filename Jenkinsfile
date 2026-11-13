@@ -70,7 +70,7 @@ EOF
 
         stage('Docker Build') {
             steps {
-                sh 'docker compose -f docker-compose.yml -f docker-compose.ci.yml build api'
+                sh 'docker build --network=host --tag "$IMAGE_REPO:$IMAGE_TAG" --file Dockerfile .'
             }
         }
 
