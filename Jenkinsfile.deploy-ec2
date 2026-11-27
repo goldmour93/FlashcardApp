@@ -1,0 +1,81 @@
+pipeline {
+    agent any
+
+    options {
+        skipDefaultCheckout(true)
+        disableConcurrentBuilds()
+    }
+
+    parameters {
+        string(name: 'EC2_HOST', defaultValue: '13.63.34.42',
+               description: 'Current EC2 public IPv4 address or DNS name')
+        string(name: 'IMAGE_TAG', defaultValue: '7c7468c92bab',
+               description: 'Existing published 12-character Git SHA image tag')
+    }
+
+    stages {
+        stage('Validate Deployment Inputs') {
+            steps {
+                script {
+                    if (!(params.EC2_HOST ==~ /^[A-Za-z0-9][A-Za-z0-9.-]*$/)) {
+                        error('EC2_HOST must be an IP address or hostname (no URL or port)')
+                    }
+                    if (!(params.IMAGE_TAG ==~ /^[0-9a-f]{12}$/)) {
+                        error('IMAGE_TAG must be a published 12-character Git SHA')
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to EC2') {
+            steps {
+                sshagent(credentials: ['ec2-ssh-key']) {
+                    sh '''
+                        set -eu
+
+                        # Jenkins has already recorded this EC2 host key during
+                        # the successful, separately verified SSH connection.
+                        ssh -o BatchMode=yes \
+                            -o StrictHostKeyChecking=yes \
+                            -o ConnectTimeout=15 \
+                            "ec2-user@${EC2_HOST}" \
+                            "IMAGE_TAG=${IMAGE_TAG} bash -se" <<'REMOTE'
+set -eu
+
+# Reuse the deployment configuration already checked out on EC2.
+cd /home/ec2-user/FlashcardApp
+git pull --ff-only
+cd deploy/ec2
+
+# Preserve the EC2-specific database password and its persistent volume.
+test -f .env
+grep -q '^POSTGRES_PASSWORD=' .env
+grep -q '^IMAGE_TAG=' .env
+umask 077
+sed -i "s/^IMAGE_TAG=.*/IMAGE_TAG=${IMAGE_TAG}/" .env
+
+docker compose config --quiet
+docker compose pull api
+docker compose up -d --no-build
+docker compose ps
+
+# A successful readiness result proves API-to-PostgreSQL connectivity.
+curl --fail --silent --show-error \
+     --retry 20 --retry-delay 3 --retry-connrefused \
+     http://127.0.0.1:5000/health/ready
+REMOTE
+                    '''
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'FlashcardApp image deployed to EC2 and database readiness verified.'
+        }
+        failure {
+            echo 'EC2 deployment failed. Inspect the SSH/deployment stage console output.'
+        }
+    }
+}
