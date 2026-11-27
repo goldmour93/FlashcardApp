@@ -1,0 +1,32 @@
+name: flashcardapp
+
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: flashcardapp
+      POSTGRES_USER: flashcardapp
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Password required}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U flashcardapp -d flashcardapp"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    image: goldmour/flashcardapp-api:${IMAGE_TAG:?Image tag required}
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__Default: "Host=postgres;Port=5432;Database=flashcardapp;Username=flashcardapp;Password=${POSTGRES_PASSWORD:?Password required}"
+    ports:
+      - "5000:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
